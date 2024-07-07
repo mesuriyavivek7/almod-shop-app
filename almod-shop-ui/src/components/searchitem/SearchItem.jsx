@@ -10,7 +10,7 @@ import './searchItem.css'
 import {motion} from 'framer-motion'
 
 
-export default function SearchResult({productTitle,sellingPrice,orgPrice}) {
+export default function SearchResult({productImg,productTitle,sellingPrice,orgPrice}) {
   const transition={
       duration: 0.5,
       delay: 0.2,
@@ -23,7 +23,7 @@ export default function SearchResult({productTitle,sellingPrice,orgPrice}) {
       animate={{ opacity: 1, scale: 1 }}
       transition={transition}
     >
-        <img className='searchItemImg' alt='' src={Almod}></img>
+        <img className='searchItemImg' alt='' src={productImg}></img>
         <div className='searchProductDesc'>
            <span className='searchProductTitle'>{productTitle}</span>
            <div className='searchProductPrice'>

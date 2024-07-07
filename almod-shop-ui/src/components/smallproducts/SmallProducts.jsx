@@ -42,14 +42,16 @@ export default function SmallProducts({productId,productSize,productQnt}) {
     
     
       (loading===true)?(<span>Loading please wait...</span>):(
+        (data.length!==0) && (
         <div className='smallProduct'>
-             <img src={ProductImg} alt=''></img>
+             <img src={data.images[0]} alt=''></img>
              <div className='smallProductInfo'>
                 <span>{data.title}</span>
                 <span>Price: Rs. {getSellingPrice()}.00</span>
                 <span>Quantity:{productQnt}  Size:{productSize}gm</span>
              </div>
         </div>
+        )
       )
 
     

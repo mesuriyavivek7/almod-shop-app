@@ -198,7 +198,7 @@ export default function Navbar() {
                    }
                    return(
                     <Link to={`product/${product._id}`} style={{textDecoration:'none'}}>
-                        <SearchResult key={i} productTitle={product.title} sellingPrice={sellingPrice} orgPrice={isDiscountAvailable?(orgPrice):(undefined)}></SearchResult>
+                        <SearchResult key={i} productImg={product.images[0]} productTitle={product.title} sellingPrice={sellingPrice} orgPrice={isDiscountAvailable?(orgPrice):(undefined)}></SearchResult>
                     </Link>
                    )
                    
