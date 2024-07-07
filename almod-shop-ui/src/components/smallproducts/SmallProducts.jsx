@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProductImg from '../../assets/almodpng.png'
+
 import useFetch from '../../hooks/useFetch'
 
 //importing css
