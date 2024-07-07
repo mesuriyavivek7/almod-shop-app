@@ -4,8 +4,7 @@ import React from 'react'
 //importing css
 import './searchItem.css'
 
-//importing images
-import Almod from '../../assets/almodpng.png'
+
 
 //importign motion
 import {motion} from 'framer-motion'
