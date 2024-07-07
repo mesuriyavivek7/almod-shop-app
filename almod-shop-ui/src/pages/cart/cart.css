@@ -1,0 +1,137 @@
+
+.cart{
+    padding-top:8rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    gap: 1.5rem;
+}
+.cartTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartheading{
+     color:#28282B;
+     font-family: "Marhey", sans-serif;
+     font-size: 2rem;
+     font-weight: 500;
+}
+.cartline{
+    height: .2rem;
+    background-color:#FDB515;
+    width: 40%;
+    border-radius:.5rem;
+    border: none;
+}
+
+
+.cartContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cartHead{
+    border-bottom: .1rem solid lightgray;
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartHead span{
+    font-size: 1.2rem;
+
+}
+
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.totalPrice{
+    font-size: 1.2rem;
+}
+.grandTotal{
+    background-color:white;
+    width:80%;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: end;
+}
+.totalPriceDesc{
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.totalPriceDiv{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.subTotal{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.totalSaving{
+    font-size: 1rem;
+    color: #454545;
+}
+.checkOutBtn{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.checkOut{
+    background-color: #FDB515;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: .8rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.continue{
+    background-color:#0047ab;
+    color: white;
+    font-weight: bold;
+    padding:.8rem 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+@media screen and (max-width:768px){
+    .cart{
+        padding-left :2rem;
+        padding-right:2rem;
+    }
+    .cartTitle .heading{ 
+        font-size: 1.8rem;
+    }
+    .cartItems{
+        gap: 1.5rem;
+    }
+    .cartContainer{
+       width: 100%;
+    }
+    .cartHead{
+        padding:1rem 1.2rem;
+        display: block;
+    }
+    .cartHeadSecond{
+       display: none;
+    }
+
+
+}

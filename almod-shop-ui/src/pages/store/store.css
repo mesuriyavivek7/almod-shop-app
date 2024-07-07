@@ -1,0 +1,228 @@
+.store{
+    padding: 8rem 3rem;
+    padding-bottom: 1rem;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    background-color: #f5f5f5;
+}
+.storeTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.storeheading{
+    color:#28282B;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Marhey", sans-serif;
+}
+.sline{
+    height: .2rem;
+    background-color:#FDB515;
+    width: 10%;
+    border-radius:.5rem;
+    border: none;
+}
+
+/* .filterSec{
+    flex: 1;
+    position: sticky;
+    top: 1rem;
+    border: .1rem solid white;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: #E48F45;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    height:max-content;
+}
+.filterHead{
+    font-size:1.5rem;
+    color: #3E3232;
+    letter-spacing: .1rem;
+}
+
+
+.filterItem{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap:.3rem;
+}
+.filterItemHead{
+    font-size:1.1rem;
+    font-weight: 500;
+    color:black;
+}
+.filterBody{
+    display: flex;
+    gap: 1rem;
+}
+.filterInputBox{
+    display: flex;
+    align-items: center;
+    gap:.2rem;
+}
+.filterInput{
+    width:60px;
+    border: none;
+    outline: none;
+    color: gray;
+    padding:.2rem .3rem;
+}
+.filterVarietyBody{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(50px,1fr));
+    gap: .3rem;
+}
+.filterText{
+    font-size: 1rem;
+}
+.resetBtn{
+    color: #3E3232;
+    background-color: white;
+    border:none;
+    padding:.6rem .8rem;
+    width: 40%;
+    margin-top:.5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+} */
+
+/* product section css start */
+
+.productSec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    padding:2rem;
+}
+.productTopSec{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.storeSearch{
+    flex: 7;
+    /* width: 100%; */
+    padding:.6rem 1rem;
+    display: flex;
+    gap: .5rem;
+    border-radius: .5rem;
+    align-items: center;
+    background-color: white;
+}
+.storeSearchInputBox{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.filterSec{
+    flex: 3;
+    display: flex;
+    gap: .5rem;
+}
+
+.priceFilter{
+    flex: 2;
+    padding: .6rem 1rem;
+    display: flex;
+    border-radius: .5rem;
+    align-items: center;
+    background-color: white;
+    gap: 1rem;
+}
+.priceFilter span,.sizeFilter span{
+    color: #36454F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.priceFilterInputBox{
+   padding:0 .3rem;
+   width: 3.5rem;
+   height: 100%;
+   border: .1rem solid lightgray;
+   border-radius:.5rem;
+   outline: none;
+   font-size: 1rem;
+}
+.sizeFilter{
+    flex: 1;
+    padding: .6rem 1rem;
+    display: flex;
+    border-radius: .5rem;
+    align-items: center;
+    background-color: white;
+    gap: 1rem;
+}
+.sizeFilter .sizeSelect{
+    padding: .3rem;
+    border: .1rem solid lightgray;
+    border-radius: .5rem;
+    width: 5.5rem;
+    font-size: 1rem;
+    color: gray;
+}
+.storeProductContainer{
+    display: grid;
+    grid-template-columns:repeat(4, minmax(280px,1fr));
+    gap: 2rem;
+    padding: 2rem 0rem;
+    transition: .4s linear;
+}
+
+@media screen and (max-width:768px){
+    .store{
+        padding: 8rem .8rem;
+        gap: 1rem;
+    }
+    .storeTitle .heading{
+        font-size: 1.8rem;
+    }
+    .sline{
+        width: 15%;
+    }
+   
+    .productSec{
+        gap: .3rem;
+        padding:1rem 0rem;
+    }
+    .productTopSec{
+        max-width: 380px;
+        flex-direction: column;
+    }
+
+    .priceFilter{
+        flex: 3;
+        padding: .5rem;
+        gap: .5rem;
+    }
+    .priceFilterInputBox{
+        width: 2.8rem;
+        font-size: .7rem;
+    }
+    .sizeFilter{
+        flex: 2;
+        padding: .5rem;
+        gap:.5rem;
+    }
+    .priceFilter span,.sizeFilter span{
+        font-size: .8rem;
+    }
+    .sizeFilter .sizeSelect{
+        width: 4rem;
+        font-size: .7rem;
+    }
+    .storeProductContainer{
+        grid-template-columns:repeat(2, minmax(140px,1fr));
+        gap: 1rem;
+    }
+}

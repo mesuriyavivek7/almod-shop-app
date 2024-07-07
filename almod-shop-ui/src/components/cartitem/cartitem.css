@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.cartItemList{
+  border-bottom: .1rem solid lightgray;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.cartProductInfo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.cartProductImg{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+}
+.cartProductTitle{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.cartProductDesc{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.cartSmallDesc{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.cartSmallDesc span{
+    color: rgb(119, 115, 115);
+    font-size: .9rem;
+}
+.cartItemPrice{
+    font-size:1.1rem;
+}
+.cartItemOrgPrice{
+   color: rgb(167, 164, 164);
+   text-decoration: line-through;
+}
+.cartDescLower{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.cartQntSec{
+    display: flex;
+    align-items: center;
+}
+.cartQntBtn{
+    background-color:#FDB515;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: .1rem .8rem;
+}
+.cartQntBtn:disabled{
+    opacity: .7;
+    cursor:no-drop;
+}
+.cartQntNum{
+    padding: .1rem .8rem;
+}
+.cartRemoveBtn{
+    padding: .3rem .8rem;
+    border: none;
+    background-color:#FF6868;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+
+.cartTotalPrice{
+    padding-right: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.cartTotalPriceHead{
+    display: none;
+}
+.cartTotalPriceDetails{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+.cartTotalPrice .TotalPriceText{
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+.cartTotalPrice .priceCalculus{
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: #36454F;    
+    font-weight: bold;
+    font-style: italic;
+}
+@media screen and (max-width:768px){
+     .cartItemList{
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+     }
+     .cartProductInfo{
+        align-items: flex-start;
+     }
+     .cartProductInfo{
+        gap: .5rem;
+     }
+     .cartProductTitle{
+        font-size: 1rem;
+     }
+     .cartProductImg{
+        width: 120px;
+        height: 150px;
+     }
+     .cartDescLower{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .cartQntBtn{
+        padding: .1rem .6rem;
+     }
+     .cartRemoveBtn{
+        padding: .2rem .6rem;
+        font-weight: normal;
+     }
+     .cartTotalPriceHead{
+        display: block;
+     }
+     .cartTotalPrice{
+        padding: 0;
+     }
+     .cartTotalPriceDetails{
+        gap:1rem;
+     }
+     .cartTotalPriceDetails .priceCalculus{
+        font-size: 1rem;
+     }
+     .cartTotalPriceDetails .TotalPriceText{
+        font-size: 1.2rem;
+     }
+}

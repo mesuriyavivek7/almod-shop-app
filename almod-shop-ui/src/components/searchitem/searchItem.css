@@ -1,0 +1,33 @@
+.searchItem{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+    padding: 1.5rem;
+}
+.searchItemImg{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.searchProductDesc{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.searchProductTitle{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #28282B;
+}
+.searchProductPrice{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color:#36454F;
+}
+@media screen and (max-width:768px){
+    .searchProductTitle{
+        font-size: .9rem;
+    }
+}

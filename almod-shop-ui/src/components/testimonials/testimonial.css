@@ -1,0 +1,113 @@
+
+.testimonial{
+    /* background-image: url(../../assets//testimonial.png); */
+    padding:3rem 0rem;
+    padding-bottom: 6rem;
+    /* background-position: center;
+    background-size: contain; */
+    background-color: #FAF9F6;
+}
+
+
+.testimonialTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .testimonialHeading{
+     color:#FDB515;
+     font-size: 2rem;
+     font-weight: 500;
+     font-family: "Marhey", sans-serif;
+     text-shadow: 2px 2px 2px black;
+ }
+ .testimonialLine{
+     height: .2rem;
+     background-color:#FDB515;
+     width: 10%;
+     border-radius:.5rem;
+     border: none;
+ }
+ 
+
+ /* css for slider  */
+
+ .testimonial .mySwiper{
+    width: 90%;
+    height: 16rem;
+    position: unset;
+    padding: 2rem 2.5rem;
+    position: relative;
+ }
+
+
+.testimonial .swiper-button-prev{
+    left: 0rem;
+    color:#FDB515;
+}
+.testimonial .swiper-button-next{
+    right: 0rem;
+    color:#FDB515;
+}
+
+
+.testimonial .swiper-slide{
+    background-color:white;
+    padding: .8rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+     -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+}
+
+.topSec{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+ .testiImg{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+.personName{
+    color: #36454F;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.testiContent{
+    padding: .5rem 0;
+}
+.testitext{
+    color:#28282B;
+}
+@media screen and (max-width:768px){
+    .testimonial{
+        padding: 1.5rem 0rem;
+    }
+    .testimonialLine{
+        width: 20%;
+    }
+    .testimonialTitle .testimonialHeading{
+        font-size:1.8rem;
+    }
+    .testimonial .mySwiper{
+        padding: 2rem 1rem;
+    }
+
+    .testimonial .swiper-button-prev,
+    .testimonial .swiper-button-next{
+        display: none;
+    }
+    
+}

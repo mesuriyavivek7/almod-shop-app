@@ -1,0 +1,397 @@
+.checkout{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color:rgba(0,0,0,0.418);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+.errMsg{
+    color: red;
+    font-size: .8rem;
+    letter-spacing: .4px;
+}
+.checkOutContainer{
+    position:relative;
+    display: flex;
+    background-color: white;
+    align-items:flex-start;
+    border-radius: .5rem;
+    gap: 1rem;
+}
+.checkOutContainer.addresswide{
+    width:800px;
+}
+.checkoutcloseIcon{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.left{
+    flex: 1;
+    padding:.8rem 1rem;
+}
+.left.addresswide{
+    flex: 3;
+}
+.left .top{
+   display: flex;
+   background-color:#F6F5F2;
+   padding: .5rem 1rem;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: .5rem;
+}
+.left .top button{
+    border: none;
+    background-color:transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.infoWindow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding:2rem 0rem;
+}
+.infoMainBody{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.infoMainBody .mainText{
+    font-size: 1.2rem;
+    font-weight:500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infoMainBody .inputBox{
+    width: 250px;
+    height: 2.5rem;
+    display: flex;
+    gap: .5rem;
+    padding: 0rem .5rem;
+}
+.infoMainBody .inputBox span{
+    padding-right:.5rem;
+    border-right: .1rem solid black;
+    font-size: 1.2rem;
+}
+.infoMainBody .inputBox .inputMobileNo{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    letter-spacing:1.4px;
+}
+
+.continueBtn{
+    border: none;
+    padding:.8rem 1.4rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #D5D8DC;
+    cursor: pointer;
+}
+.continueBtn:disabled{
+    cursor:no-drop;
+}
+.continueBtn.active{
+    background-color: black;
+}
+
+/* css for otp verificarion  */
+.inputBox.otpVerify{
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.resendOtpSec{
+    display: flex;
+    gap:1rem;
+}
+.resendMsg{
+    font-size: 1rem;
+    color:#6D6D6D;
+}
+.resendOtpBtn{
+   border: none;
+   background-color: transparent;
+   color: gray;
+   border-bottom:.1rem solid gray;
+   cursor: pointer;
+}
+.resendOtpBtn:disabled{
+    cursor: no-drop;
+    color: lightgray;
+    border-bottom:.1rem solid lightgray;
+}
+
+.otpInstruction{
+    font-size: .9rem;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* css for address window */
+.addressHead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.addressHead h4{
+   font-size: 1rem;
+   font-weight: 400;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.addressHead span{
+    color: #6D6D6D;
+    font-size: .8rem;
+}
+
+.infoWindow.addresswide{
+    padding:1rem 0rem;
+    gap:1rem;
+
+}
+
+.addressForm{
+    overflow: scroll;
+    height: 190px;
+    padding:.5rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+ .addressForm .inputBox{
+    width: 100%;
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:.5rem .3rem;
+    border-radius: .5rem;
+}
+.addressForm .checkBox{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .5rem .3rem;
+    border-radius: .5rem;
+    border: .1rem solid lightgray;
+}
+
+.addressForm .checkBox input:checked{
+    background-color: blue;
+}
+
+.addressForm .inputBox span{
+   font-size: .8rem;
+   border: none;
+   color:gray;
+}
+
+.addressForm .inputBox input,select{
+    width:100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+}
+
+
+.addressForm .inputBoxContainer{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+
+.addressForm .checkBoxContainer{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.addressForm .checkBoxContainer span{
+    font-size: 1rem;
+    color: gray;
+    font-weight: 400;
+}
+.addressContinueBtn{
+    border: none;
+    padding:.8rem 1.4rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color:black;
+    cursor: pointer;
+}
+.addressContinueBtn:disabled{
+    background-color: #D5D8DC;
+    cursor: no-drop;
+}
+
+/* css for payment window */
+
+.infoWindow.paywide{
+    padding: 1rem 0rem;
+    gap:2.5rem;
+}
+
+.payWindowContainer{
+    border: .1rem solid #87CEEB;
+    border-radius: .5rem;
+    display: flex;
+    gap: 1rem;
+    padding:.8rem;
+}
+.payWindowContainer .pleft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payWindowContainer .pright{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.payWindowContainer .pright .payInfo{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.payWindowContainer .pright .payInfo p{
+    font-size: .9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: .3rem;
+}
+.payWindowContainer .pright .payInfo span{
+    color:#36454F;
+    font-size: .9rem;
+}
+.payWindowContainer .pright .payimages{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.payWindowContainer .pright img{
+    width:80px;
+    height: 60px;
+
+}
+.checkbox-round {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color:lightblue;
+}
+
+.paynowBtn{
+    border: none;
+    padding:.8rem 1.4rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color:black;
+    cursor: pointer;
+}
+
+.right{
+    flex: 1;
+    padding: 1.2rem 1rem;
+}
+.right.addresswide{
+    flex:2;
+}
+.orderSummeryHead{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.orderSummery{
+    margin-top:1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.orderPriceDetails{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+.orderPriceDetails hr{
+    border-color:lightgray;
+}
+.gstInfo{
+    font-size: .8rem;
+    color:gray;
+}
+.totalBox{
+    display: flex;
+    justify-content: space-between;
+}
+.totalBox span{
+    font-size: 1rem;
+    color:#36454F;
+}
+.grandTotalBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .8rem;
+}
+.grandTotalBox{
+    font-size: 1.1rem;
+    color:#1B1212;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:768px){
+    .checkOutContainer{
+        flex-direction: column;
+        gap:.5rem;
+        align-items: center;
+    }
+    .checkOutContainer.addresswide{
+        max-width: 400px;
+    }
+    .left.addresswide{
+        flex:1;
+    }
+    
+    .right.addresswide{
+        flex: 1;
+    }
+}

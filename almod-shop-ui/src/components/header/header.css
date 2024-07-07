@@ -1,0 +1,106 @@
+/* $carousel-control-color:black !default; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* color history
+#002D62 #0530ad #034694 #0047AB #003399*/
+
+.topheader{
+    margin-top: 4.6rem;
+}
+
+.innerSec{
+  background-color:#012169;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+.headerImage{
+  height: 80vh;
+}
+.headerImage img{
+  width: 100%;
+  height: 100%;
+}
+.innerSec .left{
+  flex: 1;
+  padding: 2rem;
+}
+
+.innerSec .right{
+  padding: 0;
+  flex: 2;
+  height: 100%;
+}
+
+.innerSec .right img{
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(19% 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+.innerSec .left .content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  
+}
+.innerSec .left .content h1{
+  color: white;
+  font-size: 3.6rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.3;
+} 
+.innerSec .left .content span{
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Mukta", sans-serif;
+  color: #FDB515;
+}
+.innerSec .left .content .expBtn{
+  display: inline-block;
+  color: white;
+  background-color: #FDB515;
+  border: none;
+  padding: .8rem 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: .2s linear;
+}
+.innerSec .left .content .expBtn:hover{
+  letter-spacing: 1.2px;
+}
+@media screen and (max-width:768px){
+  .innerSec{
+    height: 32vh;
+  }
+
+  .headerImage{
+    height: 32vh;
+  }
+  
+  .innerSec .left{
+    flex: 1;
+    padding: 0;
+    padding-left: .8rem;
+  }
+  .innerSec .right{
+    flex: 2;
+  }
+  .innerSec .left .content{
+    gap: .6rem;
+  }
+  .innerSec .left .content h1{
+    line-height: 1.4;
+    font-size: 1.4rem;
+  }
+  .innerSec .left .content span{
+    font-size: .8rem;
+  }
+  .innerSec .left .content .expBtn{
+    font-size: .6rem;
+    padding:.3rem;
+    width: 100%;
+  }
+}

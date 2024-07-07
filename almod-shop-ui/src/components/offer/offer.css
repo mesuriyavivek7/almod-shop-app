@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+.category{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding:4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+/* #AD6F69 👉🏽 #43302E https://www.jootoor.com/brown-gradient/ */
+.categoryTitle{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.categoryTitle .catheading{
+    color:#28282B;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Marhey", sans-serif;
+}
+.categoryTitle .catline{
+    height: .2rem;
+    background-color:#FDB515;
+    width: 40%;
+    border-radius:.5rem;
+    border: none;
+}
+
+
+.categorySec{
+    cursor: pointer;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.categoryItem{
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.categoryItem img{
+   position: relative;
+   object-fit: cover;
+   scale: 1;
+   height: 290px;
+   width: 600px;
+   transition: .2s linear;
+   border-radius: .5rem;
+   margin-bottom:.1rem;
+   z-index:1;
+}
+.categoryItem:hover img{
+    scale: .97;
+}
+
+.categoryItem .catContent{
+    position: relative;
+    z-index:4;
+    padding: .8rem .5rem;
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid lightgray;
+    border-radius:0 0 .5rem .5rem;
+    background-color: #f5f5f5;
+}
+.categoryItem .catContent .catTitle{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: "Oswald", sans-serif;
+}
+
+
+@media screen and (max-width:768px){
+    .offerTitle .heading{
+    font-size:1.8rem;
+   }
+
+   .category{
+    padding:2.5rem .5rem;
+    gap: .5rem;
+   }
+  
+  .categorySec{
+    padding:0rem 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .categoryItem{
+    width: 100%;
+  }
+
+  .categoryItem img{
+    width: 100%;
+    height:250px;
+  }
+ 
+}

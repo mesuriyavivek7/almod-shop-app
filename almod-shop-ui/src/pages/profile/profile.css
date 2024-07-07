@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+.profile{
+    padding:7rem 0rem;
+    background-color: #f5f5f5;
+    padding-bottom:2rem;
+}
+
+.profileTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileheading{
+    color: #28282B;
+    font-size: 2rem;
+    font-family: "Marhey", sans-serif;
+    font-weight:500;
+}
+.profileline{
+    height: .2rem;
+    background-color:#FDB515;
+    width: 8%;
+    border-radius:.5rem;
+    border: none;
+}
+
+.profileContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 4rem;
+}
+.profiledetails{
+    padding: 0rem 2rem;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.profiledetails h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+.orderdetails{
+    flex: 3;
+}
+
+.infoContainer ,.addressContainer{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.infoContainer .leftinfo,.rightinfo,.leftaddress,.rightaddress{
+    display: flex;
+    gap:.5rem;
+    flex-direction: column;
+}
+
+.infoContainer .leftinfo .leftspan{
+    font-size: 1.1rem;
+    color: #28282B;
+}
+
+.infoContainer .rightinfo .rightspan{
+    font-size: 1rem;
+    color: gray;
+}
+
+.addressContainer .leftaddress .leftspan{
+    font-size: 1.1rem;
+    color: #28282B;
+}
+
+.addressContainer .rightaddress .rightspan{
+    font-size: 1rem;
+    color: gray;
+}
+
+.addressinfo .addaddress{
+   font-size: 1.1rem;
+   color:#28282B;
+}
+.addressinfo .addresslink{
+    text-decoration: underline;
+    color: gray;
+    cursor: pointer;
+}
+
+.infocontent .infotopsec{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:1.2rem;
+}
+
+.logoutbtn{
+    font-size: .8rem;
+    border: none;
+    padding:.2rem .8rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: #FF6868;
+    letter-spacing: 1px;
+}
+
+.orderdetails{
+    border-radius: 1rem;
+    background-color:white;
+    padding: 1rem;
+}
+
+.orderdetails h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+
+.emptyorder{
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.emptyorder img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.emptyorder span{
+    font-size: 1rem;
+    letter-spacing: .8px;
+    color: #28282B;
+}
+
+.orderContainer{
+    display: grid;
+    grid-template-columns:repeat(4, minmax(150px,1fr));
+    gap: 1.2rem;
+}
+
+
+.orderimage{
+    width: 100%;
+}
+.orderitem .orderimage img{
+   height: 160px;
+   width: 100%;
+}
+.orderitem .ordercontent{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    background-color:#F8F9F9;
+    padding: .5rem;
+}
+
+.orderitem .ordercontent .ordertitle{
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: black;
+}
+.orderitem .ordercontent .orderprice,.orderqnt{
+    font-size: .8rem;
+    color: #28282B;
+}
+
+@media screen and (max-width:768px){
+    .profileline{
+        width: 14%;
+    }
+
+    .profileContainer{
+        padding:2rem 1rem;
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .profiledetails{
+        padding: 0rem;
+    }
+
+    .profiledetails h2{
+        font-size: 1.5rem;
+    }
+
+    .orderContainer{
+        grid-template-columns:repeat(2, minmax(150px,1fr));
+    }
+}

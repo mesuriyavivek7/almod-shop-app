@@ -1,0 +1,51 @@
+.MultyProductSlider{
+    height: 100%;
+    width: 100%;
+}
+.MultyProductSlider .mySwiper2{
+    position: relative;
+    width: 100%;
+}
+
+.MultyProductSlider .mySwiper2 .swiper-slide{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.MultyProductSlider .mySwiper2 .swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MultyProductSlider .mySwiper{
+    position: relative;
+    padding: .5rem 0rem;
+    box-sizing: border-box;
+    height: 20%;
+}
+
+.MultyProductSlider .mySwiper .swiper-slide{
+    height: 100%;
+    width: 25%;
+    border: .1rem solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.MultyProductSlider .mySwiper .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.MultyProductSlider .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
