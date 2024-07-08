@@ -114,6 +114,7 @@ export default function Store() {
     }else{
       dispatch({type:"CART_CHANGE",payload:cartItems})
       transDispatch({type:"TRANS_PRICE",payload:{totalPrice:totalPrice+sellingPrice,totalSaving:totalSaving+discountedMoney}})
+      navigate('/cart')
     }
     
 }
