@@ -8,7 +8,7 @@ let transpoter=nodemailer.createTransport({
     port:587,
     auth:{
         user:process.env.USER_MAIL,
-        pass:process.env.USER_PASS
+        pass:process.env.USER_APP_PASS
     }
 })
 export const sendMail=async (req,res)=>{
@@ -18,7 +18,7 @@ export const sendMail=async (req,res)=>{
     let mailOption={
         from:{
             name:"Fuelflex",
-            address:'vivekmesuriya110@gmail.com'
+            address:'fuelflexindia@gmail.com'
         },
         to:mailpreq.to,
         subject:mailpreq.subject,

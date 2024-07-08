@@ -58,7 +58,6 @@ export default function AddressWindow({setAddressWindow,setPayWindow,setAddressC
   const saveaddresschanges= async ()=>{
      try{
        const res=await axios.post(`${baseURL}/user/updateaddress/${user._id}`,addressObj,{withCredentials:true})
-       console.log(res)
        userDispatch({type:"LOGIN_SUCCESS",payload:res.data})
        changeWindow()
      }catch(err){
