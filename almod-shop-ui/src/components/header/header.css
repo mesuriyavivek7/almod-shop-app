@@ -73,11 +73,11 @@
 }
 @media screen and (max-width:768px){
   .innerSec{
-    height: 32vh;
+    height: 35vh;
   }
 
   .headerImage{
-    height: 32vh;
+    height: 35vh;
   }
   
   .innerSec .left{

@@ -132,6 +132,8 @@
     .cartHeadSecond{
        display: none;
     }
-
+    .grandTotal{
+        width: 90%;
+    }
 
 }

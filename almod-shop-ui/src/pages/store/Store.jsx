@@ -8,6 +8,8 @@ import axios from 'axios'
 
 //importing css 
 import './store.css'
+import { useNavigate } from 'react-router-dom'
+
 
 
 
@@ -32,6 +34,7 @@ import { TransContext } from '../../context/TransContext'
 
 
 export default function Store() {
+  const navigate=useNavigate()
   const location=useLocation()
 
   const baseURL=process.env.REACT_APP_API_BASE_URL
@@ -74,6 +77,7 @@ export default function Store() {
        await axios.post(`${baseURL}/user/cart/${userId}`,cartItems)
        dispatch({type:"CART_CHANGE",payload:cartItems})
        transDispatch({type:"TRANS_PRICE",payload:{totalPrice:totalPrice+sellingPrice,totalSaving:totalSaving+discountedMoney}})
+       navigate('/cart')
     }catch(err){
        console.log("error occured")
        dispatch({type:"CART_FAILURE",payload:err.response.data})

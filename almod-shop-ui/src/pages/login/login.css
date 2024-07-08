@@ -16,6 +16,10 @@
     border-radius:.5rem;
 }
 
+.successmsg{
+    color:#2a52be;
+}
+
 .loginTitle{
     font-family: 'Protest Strike', sans-serif;
     font-weight: 600;

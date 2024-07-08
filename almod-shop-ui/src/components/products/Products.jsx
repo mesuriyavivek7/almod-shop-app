@@ -10,7 +10,7 @@ import {useAutoAnimate} from '@formkit/auto-animate/react'
 //importing usefetch
 import useFetch from '../../hooks/useFetch'
 
-
+import { useNavigate } from 'react-router-dom'
 
 //importing motion for animation
 import { motion} from 'framer-motion'
@@ -23,6 +23,7 @@ import { Link } from 'react-router-dom'
 
 export default function Products() {
   //for animation
+  const navigate=useNavigate()
   const transition={
     duration: 1,
     delay: 0.1,
@@ -52,6 +53,7 @@ export default function Products() {
          await axios.post(`${baseURL}/user/cart/${userId}`,cartItems)
          dispatch({type:"CART_CHANGE",payload:cartItems})
          transDispatch({type:"TRANS_PRICE",payload:{totalPrice:totalPrice+sellingPrice,totalSaving:totalSaving+discountedMoney}})
+         navigate('/cart')
       }catch(err){
          console.log("error occured")
          dispatch({type:"CART_FAILURE",payload:err.response.data})

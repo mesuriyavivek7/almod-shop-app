@@ -216,7 +216,8 @@
         color: white;
     }
     .navhead{
-        width: 150px;
+        width: 120px;
+        height: 70px;
     }
     .searchSec{
         padding: .5rem 0rem;

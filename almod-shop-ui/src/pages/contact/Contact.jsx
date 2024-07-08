@@ -51,9 +51,8 @@ export default function Contact() {
             <span className='infoText'><span className='infoHead'>Company</span> - First Unified Pvt Ltd</span>
             <span className='infoText'><span className='infoHead'>Email</span> - fuelflexindia@gmail.com</span>
             <span className='infoText'><span className='infoHead'>Phone</span> - +91 92650 67663</span>
-            <span className='infoText'><span className='infoHead'>Corporate Office</span> - Anushruti Tower, Near Binory Hotel,Sg Highway Ahmedabad-380052</span>
-            <span className='infoText'><span className='infoHead'>Manufacturing Unit</span> - 197 - Amrut Udhyognagar, Nr diamond nagar,Surat Kamrej road,kholvad surat</span>
-            <span className='infoText'><span className='infoHead'>working days</span> - Monday to Sunday</span>
+            <span className='infoText'><span className='infoHead'>Corporate Office</span> - Firts Unified 49, Ved Industrial Park,2 Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
+            <span className='infoText'><span className='infoHead'>working days</span> - Monday to Saturday</span>
             <span className='infoText'><span className='infoHead'>Timing</span> - 9am to 6pm</span>
           </div>
 

@@ -19,13 +19,13 @@ export default function Footer() {
         <div className='footerSec'>
             <div className='footerItem'>
                 <span className='footerLogo'>
-                   fuelflex.
+                   fuelflex.in
                 </span>
                 <div className='socialLinks'>
                    <span className='socialTitle'>Follow Us:</span>
                    <div className='links'>
                      <a href="https://www.instagram.com/fuelflex.in/" className='linkItem'><InstagramIcon></InstagramIcon> Instagram</a>
-                     <a href="##" className='linkItem'><FacebookIcon></FacebookIcon> Facebook</a>
+                     <a href="https://www.facebook.com/profile.php?id=61561943455009&mibextid=ZbWKwL" className='linkItem'><FacebookIcon></FacebookIcon> Facebook</a>
                      <a href="##" className='linkItem'><LinkedInIcon></LinkedInIcon> LinkedIn</a>
                    </div>
                 </div>
@@ -58,13 +58,13 @@ export default function Footer() {
                 <div className='contacts'>
                     <div className='contactItem'>
                         <LocationOnIcon></LocationOnIcon>
-                        <span className='contacttextaddress'>D-702, parivar homes, near western prime, gota, Ahmedabad-382481</span>
+                        <span className='contacttextaddress'>Firts Unified 49, Ved Industrial Park,2 Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
                     </div>
                     <div className='contactItem'>
                         <CallIcon></CallIcon>
                         <div className='contactTexts'>
                             <a href='+919265067663' className='contacttext'>+91 9265067663</a>
-                            <a href='+918758242987' className='contacttext'>+91 8746576455</a>
+                            <a href='+918758242987' className='contacttext'>+91 8758242987</a>
                         </div>
                     </div>
                     <div className='contactItem'>

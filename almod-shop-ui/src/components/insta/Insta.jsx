@@ -17,7 +17,7 @@ export default function Insta() {
   return (
     <div className='insta'>
        <div className='instaTitle'>
-            <span className='instaheading'>Follow Us On Instagram @fuelflex</span>
+            <span className='instaheading'>Follow Us On Instagram @fuelflex.in</span>
        </div>
 
        <div className='instaContainer'>

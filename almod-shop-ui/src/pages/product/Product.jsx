@@ -202,10 +202,7 @@ export default function Product() {
              </div>
              <div className='productDescSec'>
                 <p className='productDescText'>
-                Made with just one ingredient, our All Natural Peanut Butter is as natural as it can get. The best addition to your diet to increase the protein intake.
-                All PINTOLA Products are made up of the finest grade, fresh and nutritious ingredients from an ISO 22000 Certified and FSSAI approved Factory. We manufacture India's favorite Nut Butters daily so that you get the Freshest Product every time.
-
-                Ideal for Weight watcher, Athletes and for overall health.
+                  {data.desc}
                 </p>
              </div>
            </div>
