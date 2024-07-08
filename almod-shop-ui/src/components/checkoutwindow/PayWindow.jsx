@@ -64,7 +64,7 @@ export default function PayWindow() {
            }
 
            let adminmail={
-            to:'mesuriyavivek49@gmail.com',
+            to:'bhuvamit4@gmail.com',
             subject:'New Order recieved 🥳🥳',
             body:`<h4>order id: ${paymentInfo.order_id} </h4> <br><br>
 
