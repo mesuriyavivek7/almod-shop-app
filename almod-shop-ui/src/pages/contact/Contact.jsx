@@ -64,7 +64,7 @@ export default function Contact() {
            whileInView='show'
         className='contactForm'>
           
-           <form action='https://formspree.io/f/myyrqbzq' method='POST'>
+           <form action='https://formspree.io/f/mpwazgba' method='POST'>
               <div className='formHead'>
                  <span className='formHeadText'>
                    Feel free to fill this contact form to get in touch with our team.

@@ -52,7 +52,7 @@ export default function BulkOrder() {
              initial='hidden'
              animate='show'
              transition={transition}
-             className='orderform' action='https://formspree.io/f/mvoejvza' method='POST'>
+             className='orderform' action='https://formspree.io/f/mgvwejrg' method='POST'>
                <motion.input
                variants={fadeInUp}
                transition={transition}
@@ -87,7 +87,7 @@ export default function BulkOrder() {
                <motion.input
                 variants={fadeInUp}
                transition={transition}
-                className='orderinputbox' name='quantity' type='number' placeholder='Quantity (in gm) *' required></motion.input>
+                className='orderinputbox' name='quantity' type='number' placeholder='Quantity (in kg) *' required></motion.input>
                <motion.div 
                 variants={fadeInUp}
                transition={transition}

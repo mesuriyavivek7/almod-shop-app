@@ -162,6 +162,7 @@ export const deleteReview=async (req,res,next)=>{
 }
 
 export const sendOtp=async (req,res,next)=>{
+    console.log('otp sended')
     try{
         const {phoneNumber,userId}=req.body
         const otp=otpgenerator.generate(4,{ lowerCaseAlphabets:false,upperCaseAlphabets: false, specialChars: false })

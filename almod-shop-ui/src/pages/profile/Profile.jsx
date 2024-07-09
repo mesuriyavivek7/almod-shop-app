@@ -22,10 +22,12 @@ import { AuthContext } from '../../context/AuthContext';
 import useFetch from '../../hooks/useFetch';
 import axios from 'axios'
 
+import { useNavigate } from 'react-router-dom'
 
 export default function Profile() {
   const baseURL=process.env.REACT_APP_API_BASE_URL
   const {user}=useContext(AuthContext)
+  const navigate=useNavigate()
   
   //fetch product data
   const {data,loading}=useFetch(`/transaction/info/${user._id}`)
@@ -33,7 +35,7 @@ export default function Profile() {
   const logouthandler=async ()=>{
      try{
        await axios.post(`${baseURL}/auth/logout`,{},{ withCredentials: true })
-       window.location.href='/login'
+       navigate('/login')
      }catch(err){
         console.log(err)
      }
