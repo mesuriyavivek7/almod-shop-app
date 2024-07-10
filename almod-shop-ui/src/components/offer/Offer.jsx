@@ -82,7 +82,7 @@ useEffect(() => {
                     <div 
                     className='catContent'>
                       <h2 className='catTitle'>{cat.catname}</h2>
-                      <span className='catSpan'><i>Start from</i> Rs.{cat.minPrice}.00</span>
+                      <span className='catSpan'><i>Starting from </i> Rs. {cat.minPrice}.00</span>
                     </div>
                    </div>
                  ))

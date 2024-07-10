@@ -1,4 +1,5 @@
-import React, {useState,useContext} from 'react'
+import React, {useState,useContext,useEffect} from 'react'
+
 
 //importing components
 import Navbar from '../../components/navbar/Navbar'
@@ -21,6 +22,9 @@ import {TransContext} from '../../context/TransContext'
 
 
 export default function Login() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const baseURL=process.env.REACT_APP_API_BASE_URL
   const location=useLocation()
 

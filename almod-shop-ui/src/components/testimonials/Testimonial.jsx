@@ -19,7 +19,7 @@ import 'swiper/css/scrollbar';
 import Test1 from '../../assets/test1.jpg'
 import Test2 from '../../assets/test2.jpeg'
 import Test3 from '../../assets/test3.jpg'
-import Test4 from '../../assets/test4.jpeg'
+// import Test4 from '../../assets/test4.jpeg'
 import Test5 from '../../assets/test5.jpeg'
 
 export default function Testimonial() {
@@ -76,7 +76,7 @@ export default function Testimonial() {
              </div>
            </SwiperSlide>
 
-           <SwiperSlide>
+           {/* <SwiperSlide>
              <div className='topSec'>
                <img src={Test4} className='testiImg' alt=''></img>
                <span className='personName'>Gautam sudani</span>
@@ -84,7 +84,7 @@ export default function Testimonial() {
              <div className='testiContent'>
                 <p className='testitext'>" The flavor can be more robust and nutty compared to processed peanut butter. It's also less sweet. "</p>
              </div>
-           </SwiperSlide>
+           </SwiperSlide> */}
 
            <SwiperSlide>
              <div className='topSec'>

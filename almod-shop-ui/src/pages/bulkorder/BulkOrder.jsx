@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 
 //importing css
 import './bulkorder.css'
@@ -13,7 +13,11 @@ import useFetch from '../../hooks/useFetch'
 import {motion} from 'framer-motion'
 
 export default function BulkOrder() {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const {data,loading}=useFetch('/product')
+
 
   const fadeInUp={
    hidden:{opacity:0,scale:0.5},

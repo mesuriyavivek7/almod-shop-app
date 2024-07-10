@@ -174,7 +174,7 @@ export default function PayWindow() {
              <div className='payInfo'>
               <p>Make your payment with different payment option click on pay now to procced to payment window.</p>
               <span>Shipping charges Rs. {shippingCharge.charge}.00</span>
-              <span>Totap Pay: Rs. {priceDetails.totalPrice+shippingCharge.charge}.00</span>
+              <span>Total Pay: Rs. {priceDetails.totalPrice+shippingCharge.charge}.00</span>
              </div>
           </div>
        </div>

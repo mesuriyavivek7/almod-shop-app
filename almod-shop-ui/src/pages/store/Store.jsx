@@ -34,6 +34,9 @@ import { TransContext } from '../../context/TransContext'
 
 
 export default function Store() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate=useNavigate()
   const location=useLocation()
 

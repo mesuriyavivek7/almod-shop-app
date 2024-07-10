@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 //importing css
 import './about.css'
@@ -18,6 +18,9 @@ import Person from '../../assets/mitbhuva.jpeg'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const fadeInUp={
       hidden:{opacity:0,y:50},
       show:{opacity:1,y:0}

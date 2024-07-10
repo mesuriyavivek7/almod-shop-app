@@ -1,5 +1,5 @@
 
-import React, { useContext }  from 'react'
+import React, { useContext,useEffect }  from 'react'
 import { useState } from 'react'
 
 import { useLocation } from 'react-router-dom'
@@ -29,6 +29,9 @@ import axios from 'axios'
 
 
 export default function Product() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
    const baseURL=process.env.REACT_APP_API_BASE_URL
    const {user} =useContext(AuthContext)
    const {dispatch}=useContext(CartContext)

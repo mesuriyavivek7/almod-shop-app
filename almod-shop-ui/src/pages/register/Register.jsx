@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 
 //importing components
 import Navbar from '../../components/navbar/Navbar'
@@ -13,6 +13,9 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 export default function Register() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const baseURL=process.env.REACT_APP_API_BASE_URL
   const navigate=useNavigate()
   const [credantial,setCredantial]=useState({

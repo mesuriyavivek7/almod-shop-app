@@ -72,6 +72,9 @@
   letter-spacing: 1.2px;
 }
 @media screen and (max-width:768px){
+  .topheader{
+    margin-top:3.8rem;
+  }
   .innerSec{
     height: 33vh;
   }

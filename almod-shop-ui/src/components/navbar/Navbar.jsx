@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 //importing icons
 import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -23,7 +23,8 @@ import SearchResult from '../searchitem/SearchItem';
 import { useNavigate } from 'react-router-dom';
 
 //import img
-import LOGO from '../../assets/logo.png'
+import LOGO from '../../assets/logo2.svg'
+
 import { AuthContext } from '../../context/AuthContext';
 import { CartContext } from '../../context/CartContext';
 import useFetch from '../../hooks/useFetch';
@@ -129,11 +130,11 @@ export default function Navbar() {
              checkUser(true)
           }
 
-          <Link className='menuItem' to='/'>home</Link>
-          <Link to='/store' className='menuItem'>our store</Link>
-          <Link to='/about' className='menuItem'>about us</Link>
-          <Link to='/contact' className='menuItem'>contact us</Link>
-          <Link to='/bulkorder' className='menuItem bo-item'>Bulk Order</Link>
+          <Link className='menuItem' to='/'>HOME</Link>
+          <Link to='/store' className='menuItem'>OUR STORE</Link>
+          <Link to='/about' className='menuItem'>ABOUT US</Link>
+          <Link to='/contact' className='menuItem'>CONTACT US</Link>
+          <Link to='/bulkorder' className='menuItem bo-item'>BULK ORDER</Link>
        </div>
        <div className='navIcon'>
           
@@ -145,8 +146,11 @@ export default function Navbar() {
           <SearchIcon onClick={()=>setSearchOpen(!searchOpen)} className='searchIcon'></SearchIcon>
           <Link to='/cart'>
             <div className='shoppingCart'>
-               <ShoppingCartOutlinedIcon className='navCart'></ShoppingCartOutlinedIcon>
-               <span className='cartItem'>{(cart===null)?(0):(cart.length)}</span>
+               <LocalMallIcon className='navCart'></LocalMallIcon>
+               
+               {
+                (cart!==null && cart.length!==0) && <span className='cartItem'>{cart.length}</span>
+               }
             </div>
           </Link>
 

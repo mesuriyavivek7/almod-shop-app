@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext ,useEffect} from 'react'
 
 //importing css
 import './profile.css'
@@ -25,6 +25,9 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 export default function Profile() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const baseURL=process.env.REACT_APP_API_BASE_URL
   const {user}=useContext(AuthContext)
   const navigate=useNavigate()

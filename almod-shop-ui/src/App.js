@@ -16,6 +16,8 @@ import Register from "./pages/register/Register";
 import CheckOut from "./pages/checkout/CheckOut";
 import BulkOrder from "./pages/bulkorder/BulkOrder";
 import Profile from "./pages/profile/Profile";
+import RandC from "./pages/r&c/RandC";
+import SP from "./pages/sp/SP";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
                <Route index element={<Profile></Profile>}></Route>
                <Route path=":id" element={<Product></Product>}></Route>
              </Route>
+             <Route path="/randr" element={<RandC></RandC>}></Route>
+             <Route path="/sp" element={<SP></SP>}></Route>
            </Routes>
            
         </BrowserRouter>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 
 //importing css
 import './home.css'
@@ -14,6 +14,9 @@ import Footer from '../../components/footer/Footer'
 
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
        {/* <Navbar></Navbar> */}

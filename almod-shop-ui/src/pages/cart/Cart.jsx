@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState ,useEffect} from 'react'
 
 //importing css
 import './cart.css'
@@ -13,6 +13,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import CheckOut from '../checkout/CheckOut'
 
 export default function Cart() {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const navigate=useNavigate()
   //fetching users details
 

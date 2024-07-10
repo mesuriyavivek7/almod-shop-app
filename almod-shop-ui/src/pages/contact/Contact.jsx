@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useEffect } from 'react'
 //importing css
 import './contact.css'
 
@@ -13,6 +13,9 @@ import {motion} from 'framer-motion'
 import WavingHandSharpIcon from '@mui/icons-material/WavingHandSharp';
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     const fadeInUp={
       hidden:{opacity:0,y:50},
       show:{opacity:1,y:0}
@@ -48,12 +51,13 @@ export default function Contact() {
            </div>
 
           <div className='contactContent'>
-            <span className='infoText'><span className='infoHead'>Company</span> - First Unified Pvt Ltd</span>
+            <span className='infoText'><span className='infoHead'>Company</span> - FIRST UNIFIED</span>
             <span className='infoText'><span className='infoHead'>Email</span> - fuelflexindia@gmail.com</span>
             <span className='infoText'><span className='infoHead'>Phone</span> - +91 92650 67663</span>
-            <span className='infoText'><span className='infoHead'>Corporate Office</span> - Firts Unified 49, Ved Industrial Park,2 Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
+            <span className='infoText'><span className='infoHead'>Corporate Office</span> - First Unified <br></br> 49, Ved Industrial Park-2, Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
             <span className='infoText'><span className='infoHead'>working days</span> - Monday to Saturday</span>
             <span className='infoText'><span className='infoHead'>Timing</span> - 9am to 6pm</span>
+            <span className='infoText'>An ISO 9001:2015 Ceritified Company</span>
           </div>
 
         </motion.div>
