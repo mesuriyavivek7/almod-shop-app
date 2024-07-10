@@ -45,11 +45,9 @@ export default function Footer() {
             <div className='footerItem'>
                 <span className='helpTitle'>Help</span>
                  <div className='helpLinks'>
-                    <a href='##' className='helpItem'>FAQs</a>
                     <a href='##' className='helpItem'>Terms of Service</a>
                     <Link style={{textDecoration:'none'}} to='/randr'><a href='##' className='helpItem'>Refund & Return</a></Link>
                     <Link style={{textDecoration:'none'}} to='/sp'><a href='##' className='helpItem'>Shipping Policy</a></Link>
-                    <a href='##' className='helpItem'>Return Order</a>
                  </div>
             </div>
 
