@@ -45,7 +45,7 @@ export default function Footer() {
             <div className='footerItem'>
                 <span className='helpTitle'>Help</span>
                  <div className='helpLinks'>
-                    <a href='##' className='helpItem'>Terms of Service</a>
+                    <Link style={{textDecoration:'none'}} to='/tos'><a href='##' className='helpItem'>Terms of Service</a></Link>
                     <Link style={{textDecoration:'none'}} to='/randr'><a href='##' className='helpItem'>Refund & Return</a></Link>
                     <Link style={{textDecoration:'none'}} to='/sp'><a href='##' className='helpItem'>Shipping Policy</a></Link>
                  </div>
@@ -56,20 +56,18 @@ export default function Footer() {
                 <div className='contacts'>
                     <div className='contactItem'>
                         <LocationOnIcon></LocationOnIcon>
-                        <span className='contacttextaddress' style={{lineHeight:1.5}}>FIRST UNIFIED<br></br> 49, Ved Industrial Park-2 ,Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
+                        <span className='contacttextaddress' style={{lineHeight:1.5}}>FIRST UNIFIED<br></br> 49, Ved Industrial Park-2,Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
                     </div>
                     <div className='contactItem'>
                         <CallIcon></CallIcon>
                         <div className='contactTexts'>
                             <a href='+919265067663' className='contacttext'>+91 9265067663</a>
-                            <a href='+918758242987' className='contacttext'>+91 8758242987</a>
                         </div>
                     </div>
                     <div className='contactItem'>
                         <EmailIcon></EmailIcon>
                         <div className='contactTexts'>
                              <a href='fuelflexindia@gmail.com' className='contacttext'>fuelflexindia@gmail.com</a>
-                             <a href='bhuvamit4@gmail.com' className='contacttext'>bhuvamit4@gmail.com</a>
                         </div>
                     </div>
                 </div>

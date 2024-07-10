@@ -1,0 +1,15 @@
+.tos{
+    padding: 8rem;
+    line-height: 1.6;
+}
+.toshead h2{
+   color: #282828;
+   font-size: 1.4rem;
+}
+
+
+@media screen and (max-width:768px){
+    .tos{
+        padding:6rem 2rem;
+    }
+}

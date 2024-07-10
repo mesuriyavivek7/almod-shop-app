@@ -35,7 +35,7 @@
 
  .testimonial .mySwiper{
     width: 90%;
-    height: 16rem;
+    height: 17rem;
     position: unset;
     padding: 2rem 2.5rem;
     position: relative;
@@ -72,12 +72,17 @@
    align-items: center;
    gap: 1rem;
 }
-
+.testImage{
+    width: 90px;
+    height: 90px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
  .testiImg{
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    scale: 1.3;
  }
 
 .personName{

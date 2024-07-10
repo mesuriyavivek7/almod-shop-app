@@ -18,6 +18,7 @@ import BulkOrder from "./pages/bulkorder/BulkOrder";
 import Profile from "./pages/profile/Profile";
 import RandC from "./pages/r&c/RandC";
 import SP from "./pages/sp/SP";
+import TOS from "./pages/tos/TOS";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
              </Route>
              <Route path="/randr" element={<RandC></RandC>}></Route>
              <Route path="/sp" element={<SP></SP>}></Route>
+             <Route path="/tos" element={<TOS></TOS>}></Route>
            </Routes>
            
         </BrowserRouter>

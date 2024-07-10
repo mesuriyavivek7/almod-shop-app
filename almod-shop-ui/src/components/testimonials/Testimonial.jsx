@@ -16,11 +16,12 @@ import 'swiper/css/scrollbar';
 
 //import images
 
-import Test1 from '../../assets/test1.jpg'
-import Test2 from '../../assets/test2.jpeg'
-import Test3 from '../../assets/test3.jpg'
-// import Test4 from '../../assets/test4.jpeg'
-import Test5 from '../../assets/test5.jpeg'
+import TestA from '../../assets/testd.jpg'
+import TestB from '../../assets/testa.jpg'
+import TestC from '../../assets/testb.jpeg'
+import TestD from '../../assets/teste.jpeg'
+import TestE from '../../assets/test3.jpg'
+
 
 export default function Testimonial() {
   return (
@@ -48,8 +49,10 @@ export default function Testimonial() {
         >
            <SwiperSlide>
              <div className='topSec'>
-               <img src={Test1} className='testiImg' alt=''></img>
-               <span className='personName'>Brijesh lakhani</span>
+               <div className='testImage'>
+                <img src={TestD} className='testiImg' alt=''></img>
+               </div>
+               <span className='personName'>Rinal Bhuva</span>
              </div>
              <div className='testiContent'>
               <p className='testitext'>" Fuelflex Peanut Butter has become a staple in my pantry. It's a perfect blend of taste, nutrition, and convenience. "</p>
@@ -58,8 +61,10 @@ export default function Testimonial() {
 
            <SwiperSlide>
              <div className='topSec'>
-               <img src={Test2} className='testiImg' alt=''></img>
-               <span className='personName'>Darshan patel</span>
+               <div className='testImage'>
+                <img src={TestA} className='testiImg' alt=''></img>
+               </div>
+               <span className='personName'>Mansi Kathrotiya</span>
              </div>
              <div className='testiContent'>
                 <p className='testitext'>" I use Fuelflex Peanut Butter as a post-workout snack, a breakfast boost, or even as a healthy dessert topping. "</p>
@@ -68,28 +73,34 @@ export default function Testimonial() {
 
            <SwiperSlide>
              <div className='topSec'>
-               <img src={Test3} className='testiImg' alt=''></img>
-               <span className='personName'>Lalji sudani</span>
+               <div className='testImage'>
+                 <img src={TestB} className='testiImg' alt=''></img>
+               </div>
+               <span className='personName'>Piyush Thummar</span>
              </div>
              <div className='testiContent'>
                 <p className='testitext'>" The texture is silky smooth, and the peanut flavor is authentic and intense. You can tell it's made with high-quality peanuts. "</p>
              </div>
            </SwiperSlide>
 
-           {/* <SwiperSlide>
+           <SwiperSlide>
              <div className='topSec'>
-               <img src={Test4} className='testiImg' alt=''></img>
-               <span className='personName'>Gautam sudani</span>
+               <div className='testImage'>
+                 <img src={TestE} className='testiImg' alt=''></img>
+               </div>
+               <span className='personName'>Dharmik Mangroliya</span>
              </div>
              <div className='testiContent'>
                 <p className='testitext'>" The flavor can be more robust and nutty compared to processed peanut butter. It's also less sweet. "</p>
              </div>
-           </SwiperSlide> */}
+           </SwiperSlide>
 
            <SwiperSlide>
              <div className='topSec'>
-               <img src={Test5} className='testiImg' alt=''></img>
-               <span className='personName'>Dharmik Mangroliya</span>
+              <div className='testImage'>
+               <img src={TestC} className='testiImg' alt=''></img>
+               </div>
+               <span className='personName'>Gautam Sudani</span>
              </div>
              <div className='testiContent'>
                 <p className='testitext'>" t's generally higher in healthy fats and lower in sugar and additives compared to regular peanut butter. "</p>

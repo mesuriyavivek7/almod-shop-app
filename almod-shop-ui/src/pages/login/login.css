@@ -52,6 +52,10 @@
     font-weight: bold;
     cursor: pointer;
 }
+.loginBtn:disabled{
+    cursor: no-drop;
+    opacity: .6;
+}
 .newUser{
     display: flex;
     gap: .3rem;

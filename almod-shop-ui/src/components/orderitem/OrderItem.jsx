@@ -39,7 +39,7 @@ export default function OrderItem({productId}) {
     <Link to={`${productId}`} style={{textDecoration:'none'}}>
      <div className='orderitem'>
        <div className='orderimage'>
-         <img src={data.images[0]} alt=''></img>
+         <img  src={data.images[0]} alt=''></img>
         </div>
        <div className='ordercontent'>
          <span className='ordertitle'>{productTitle}</span>
