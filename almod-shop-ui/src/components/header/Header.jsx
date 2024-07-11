@@ -13,8 +13,9 @@ import { Link } from 'react-router-dom'
 import '@coreui/coreui/dist/css/coreui.min.css'
 
 //importing image
-import PeanutImg from '../../assets/peanutheader.jpg'
-import Header2 from '../../assets/header.jpeg'
+import Banner3 from '../../assets/banner3.jpg'
+import Banner2 from '../../assets/banner2.png'
+import Banner1 from '../../assets/banner1.jpg'
 
 //importing navbar
 import Navbar from '../navbar/Navbar'
@@ -35,17 +36,33 @@ export default function Header() {
                     </div>
                   </div>
                  <div className='right'>
-                   <img src={PeanutImg} alt='slide 1'></img>
+                   <img src={Banner3} alt='slide 1'></img>
                  </div>
                </div>
          </CCarouselItem>
          <CCarouselItem  className='carousleItem'>
              <div className='headerImage'>
+                 <div className='secondcontent'>
+                    <span className='uppertag'>" Pure Peanut Butter Perfection! "</span>
+                    <h1>Spread the <span className='specialtext'>Love, </span>Spread the Flavor.</h1>
+                    <button className='secondbtn'>Shop Now</button>
+                 </div>
                 <Link to='/store'>
-                <img className="d-block w-100" src={Header2} alt="slide 1" />
+                  <img className="d-block w-100" src={Banner1} alt="slide 1" />
                 </Link>
              </div>
-       </CCarouselItem>
+        </CCarouselItem>
+
+        <CCarouselItem  className='carousleItem'>
+             <div className='headerImage'>
+                <div className='thirdcontent'>
+                   <h1>Yummy<br></br>Natural & Healthy<br></br> Crunch</h1>
+                </div>
+                <Link to='/store'>
+                  <img className="d-block w-100" src={Banner2} alt="slide 2" />
+                </Link>
+             </div>
+        </CCarouselItem>
 
    </CCarousel>
         </div>
