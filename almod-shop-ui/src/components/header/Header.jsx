@@ -16,6 +16,7 @@ import '@coreui/coreui/dist/css/coreui.min.css'
 import Banner3 from '../../assets/banner3.jpg'
 import Banner2 from '../../assets/banner2.png'
 import Banner1 from '../../assets/banner1.jpg'
+import Banner4 from '../../assets/banner4.jpg'
 
 //importing navbar
 import Navbar from '../navbar/Navbar'
@@ -52,6 +53,14 @@ export default function Header() {
                 </Link>
              </div>
         </CCarouselItem>
+        <CCarouselItem  className='carousleItem'>
+             <div className='headerImage'>
+                 
+                <Link to='/store'>
+                  <img className="d-block w-100" src={Banner4} alt="slide 1" />
+                </Link>
+             </div>
+        </CCarouselItem>
 
         <CCarouselItem  className='carousleItem'>
              <div className='headerImage'>
@@ -63,6 +72,7 @@ export default function Header() {
                 </Link>
              </div>
         </CCarouselItem>
+
 
    </CCarousel>
         </div>
