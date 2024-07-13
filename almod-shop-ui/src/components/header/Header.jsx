@@ -42,16 +42,18 @@ export default function Header() {
                </div>
          </CCarouselItem>
          <CCarouselItem  className='carousleItem'>
+          <Link to='/store'>
              <div className='headerImage'>
                  <div className='secondcontent'>
                     <span className='uppertag'>" Pure Peanut Butter Perfection! "</span>
                     <h1>Spread the <span className='specialtext'>Love, </span>Spread the Flavor.</h1>
                     <button className='secondbtn'>Shop Now</button>
                  </div>
-                <Link to='/store'>
+                
                   <img className="d-block w-100" src={Banner1} alt="slide 1" />
-                </Link>
+                
              </div>
+          </Link>
         </CCarouselItem>
         <CCarouselItem  className='carousleItem'>
              <div className='headerImage'>

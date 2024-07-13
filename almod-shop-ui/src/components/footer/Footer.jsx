@@ -56,7 +56,7 @@ export default function Footer() {
                 <div className='contacts'>
                     <div className='contactItem'>
                         <LocationOnIcon></LocationOnIcon>
-                        <span className='contacttextaddress' style={{lineHeight:1.5}}>FIRST UNIFIED<br></br> 49, Ved Industrial Park-2,Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
+                        <span className='contacttextaddress' style={{lineHeight:1.5}}>FIRST UNIFIED<br></br> 49, Ved Industrial Park-2, Bhuvaladi Gam Road, Kathwada, Ahmedabad, Gujarat-382430</span>
                     </div>
                     <div className='contactItem'>
                         <CallIcon></CallIcon>

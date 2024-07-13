@@ -27,7 +27,7 @@ export default function Testimonial() {
   return (
     <div className='testimonial'>
         <div className='testimonialTitle'>
-            <span className='testimonialHeading'>What's customer says</span>
+            <span className='testimonialHeading'>Happy Customers</span>
             <hr className='testimonialLine'></hr>
         </div>
         <Swiper 
