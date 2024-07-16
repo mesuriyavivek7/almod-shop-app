@@ -119,12 +119,12 @@ export default function PayWindow() {
                 
          //razorpay option value
          var options = {
-          "key": "rzp_test_SCY1Bxb9fJzZa4", // Enter the Key ID generated from the Dashboard
+          "key": "rzp_live_9VGxQ8Uosjk4Es", // Enter the Key ID generated from the Dashboard
           "amount":payprice, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
           currency,
           "name": "Fuelflex", //your business name
           "description": "Test Transaction",
-          "image": "https://example.com/your_logo",
+          "image": "https://res.cloudinary.com/dglpx6ldt/image/upload/v1721134059/curvelogo_wqtxb5.png",
           "order_id":order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
           "handler":async function (response){
             const validateRes=await axios.post(`${baseURL}/payment/validatepayment`,{...response},{withCredentials:true})
