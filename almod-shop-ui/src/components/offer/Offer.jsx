@@ -78,7 +78,7 @@ useEffect(() => {
                       animate={controls}
                       variants={variants}
                       transition={transition}
-                    src={cat.catImg} alt=''></motion.img>
+                      src={cat.catImg} alt=''></motion.img>
                     <div 
                     className='catContent'>
                       <h2 className='catTitle'>{cat.catname}</h2>
