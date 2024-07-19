@@ -12,10 +12,8 @@ import Footer from '../../components/footer/Footer'
 import {motion} from 'framer-motion'
 
 //importing images
-import Person from '../../assets/mitbhuva.jpeg'
+import Person from '../../assets/mitbhuva.png'
 
-//importing icons
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function About() {
   useEffect(() => {
@@ -54,11 +52,8 @@ export default function About() {
                     <motion.span
                     variants={fadeInUp}
                     transition={transition}
-                    ><ArrowForwardIcon></ArrowForwardIcon>  Customer oriented and we stand for quality.</motion.span>
-                    <motion.span
-                    variants={fadeInUp}
-                    transition={transition}
-                    ><ArrowForwardIcon></ArrowForwardIcon>  Self improvement and team work to achieve business excellence.</motion.span>
+                    > Fuelflex serve high quality butter & our main aim is improving peoples health.</motion.span>
+                   
                 </div>
             </div>
             <div className='aboutBox'>
@@ -70,29 +65,11 @@ export default function About() {
                     <motion.span
                     variants={fadeInUp}
                     transition={transition}
-                    ><ArrowForwardIcon></ArrowForwardIcon> Let us top this business in minimum time.</motion.span>
-                    <motion.span
-                    variants={fadeInUp}
-                    transition={transition}
-                    ><ArrowForwardIcon></ArrowForwardIcon> Fuelflex at home, Fuelflex at every home, Fuelflex everywhere.</motion.span>
+                    >We establish fuelflex to grow the people's health and serve pure and high quality butter to the society.</motion.span>
+  
                 </div>
             </div>
-            <div className='aboutBox'>
-                <motion.h2 
-                    variants={fadeInUp}
-                    transition={transition}
-                className='aboutHead'>Culture</motion.h2>
-                <div className='aboutText'>
-                    <motion.span
-                    variants={fadeInUp}
-                    transition={transition}
-                    ><ArrowForwardIcon></ArrowForwardIcon> Employee engagement & opportunities for advancement.</motion.span>
-                    <motion.span
-                    variants={fadeInUp}
-                    transition={transition}
-                    ><ArrowForwardIcon></ArrowForwardIcon> Relationship between employee & customer.</motion.span>
-                </div>
-            </div>
+            
          </motion.div>
         <div className='aboutImg'>
            <motion.img
@@ -100,7 +77,16 @@ export default function About() {
                 whileInView='show'
                 variants={fadeInUp}
                 transition={transition}
+                className='personImg'
             alt='' src={Person}></motion.img>
+            <motion.div 
+            initial='hidden'
+                whileInView='show'
+                variants={fadeInUp}
+                transition={transition}
+            className='persontitle'>
+                <span>The Founder</span>
+            </motion.div>
         </div>
       </div>
 
@@ -118,7 +104,7 @@ export default function About() {
           <motion.p
           variants={fadeInUp}
           transition={transition}
-          >FIRST UNIFIED was incepted by Mit Bhuva. Bringing their entrepreneurial skills, commitment and astuteness to the fore they have been guiding their team, To their team, working day in and out to realise a dream. To their repertoire of skills they have added the human element which has proved vritical in making a success of FIRST UNIFIED.</motion.p>
+          >FIRST UNIFIED was incepted by <b>Mit Bhuva</b>. Bringing their entrepreneurial skills, commitment and astuteness to the fore they have been guiding their team, To their team, working day in and out to realise a dream. To their repertoire of skills they have added the human element which has proved vritical in making a success of <b>FIRST UNIFIED</b>.</motion.p>
         </motion.div>
 
         <motion.div

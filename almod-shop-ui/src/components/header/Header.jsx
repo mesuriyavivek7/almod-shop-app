@@ -3,6 +3,7 @@ import React from 'react'
 //importing css
 import './header.css'
 
+import { Navigate, useNavigate } from 'react-router-dom'
 
 //importing core ui
 import { CCarousel } from '@coreui/react'
@@ -20,13 +21,19 @@ import Banner4 from '../../assets/banner4.jpg'
 
 //importing navbar
 import Navbar from '../navbar/Navbar'
+
+
 export default function Header() {
+  const navigate=useNavigate()
+  const handleSearch=(keyword)=>{
+     navigate('/store',{state:keyword})    
+  }
   return (
     <>
       <Navbar></Navbar>
         <div className='topheader'>
         
-        <CCarousel  controls={false}>
+        <CCarousel  controls={false} interval={2000}>
             <CCarouselItem className='carousleItem'>
                 <div className='innerSec'>
                    <div className='left'>
@@ -41,21 +48,8 @@ export default function Header() {
                  </div>
                </div>
          </CCarouselItem>
-         <CCarouselItem  className='carousleItem'>
-          <Link to='/store'>
-             <div className='headerImage'>
-                 <div className='secondcontent'>
-                    <span className='uppertag'>" Pure Peanut Butter Perfection! "</span>
-                    <h1>Spread the <span className='specialtext'>Love, </span>Spread the Flavor.</h1>
-                    <button className='secondbtn'>Shop Now</button>
-                 </div>
-                
-                  <img className="d-block w-100" src={Banner1} alt="slide 1" />
-                
-             </div>
-          </Link>
-        </CCarouselItem>
-        <CCarouselItem  className='carousleItem'>
+        
+        <CCarouselItem  className='carousleItem' onClick={()=>handleSearch("High Protien")}>
              <div className='headerImage'>
                  
                 <Link to='/store'>
@@ -64,7 +58,7 @@ export default function Header() {
              </div>
         </CCarouselItem>
 
-        <CCarouselItem  className='carousleItem'>
+        <CCarouselItem  className='carousleItem' onClick={()=>handleSearch("Natural")}>
              <div className='headerImage'>
                 <div className='thirdcontent'>
                    <h1>Yummy<br></br>Natural & Healthy<br></br> Crunch</h1>

@@ -21,6 +21,7 @@ import TestB from '../../assets/testa.jpg'
 import TestC from '../../assets/testb.jpeg'
 import TestD from '../../assets/teste.jpeg'
 import TestE from '../../assets/test3.jpg'
+import TestF from '../../assets/testf.jpeg'
 
 
 export default function Testimonial() {
@@ -103,7 +104,19 @@ export default function Testimonial() {
                <span className='personName'>Gautam Sudani</span>
              </div>
              <div className='testiContent'>
-                <p className='testitext'>" t's generally higher in healthy fats and lower in sugar and additives compared to regular peanut butter. "</p>
+                <p className='testitext'>" It's generally higher in healthy fats and lower in sugar and additives compared to regular peanut butter. "</p>
+             </div>
+           </SwiperSlide>
+
+           <SwiperSlide>
+             <div className='topSec'>
+              <div className='testImage'>
+               <img src={TestF} className='testiImg' alt=''></img>
+               </div>
+               <span className='personName'>Harmi Patel</span>
+             </div>
+             <div className='testiContent'>
+                <p className='testitext'>"The flavor is rich and nutty with a perfect balance of sweetness and saltiness. "</p>
              </div>
            </SwiperSlide>
         </Swiper>
