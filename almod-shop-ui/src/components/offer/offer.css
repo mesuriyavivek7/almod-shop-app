@@ -7,6 +7,7 @@
     gap: 2rem;
     padding:4rem 2rem;
     background-color: #f5f5f5;
+    font-family: "sans-serif" !important;
 }
 
 /* #AD6F69 👉🏽 #43302E https://www.jootoor.com/brown-gradient/ */
@@ -20,7 +21,7 @@
     color:#28282B;
     font-size: 2rem;
     font-weight: 500;
-    font-family: "Marhey", sans-serif;
+    font-family: "sans-serif";
 }
 .categoryTitle .catline{
     height: .2rem;

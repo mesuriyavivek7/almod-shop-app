@@ -13,8 +13,8 @@
     align-items: center;
     justify-content: space-around;
     padding: 0rem 2rem;
-    background: rgb(1,33,105);
-    background: linear-gradient(150deg, rgba(1,33,105,0.9906556372549019) 20%, rgba(0,71,171,1) 70%, rgba(124,185,232,1) 100%);
+    background: #5c3939;
+    background: linear-gradient(150deg, #5c3939 20%, #5c3939 70%, #5c3939 100%);
     z-index: 9999;
     transition: .2s linear;
     border-bottom: .1rem solid white;
