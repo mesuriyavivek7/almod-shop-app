@@ -184,3 +184,30 @@
 
 
 }
+/*heder image css*/
+.header-img-container{
+    position: relative;
+    width:100%;
+}
+.header-img{
+  max-height: 355px;
+  width:100%;
+}
+.explore-btn{
+  position: absolute;
+  top: 82%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #8d4c4c;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 10x;
+  font-family: sans-serif;
+}
+/*css ended*/

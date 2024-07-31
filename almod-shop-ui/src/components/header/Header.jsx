@@ -16,7 +16,7 @@ import '@coreui/coreui/dist/css/coreui.min.css'
 //importing image
 import Banner3 from '../../assets/banner3.jpg'
 import Banner2 from '../../assets/banner2.png'
-import Banner1 from '../../assets/banner1.jpg'
+import Banner1 from '../../assets/bannerOne.png'
 import Banner4 from '../../assets/banner4.jpg'
 
 //importing navbar
@@ -32,8 +32,12 @@ export default function Header() {
     <>
       <Navbar></Navbar>
         <div className='topheader'>
-        
-        <CCarousel  controls={false} interval={2000}>
+          <div class="header-img-container">
+                <Link to='/store' style={{textDecoration:'none'}}><button class="explore-btn">Explore Store</button></Link>
+              <img class="header-img" src={Banner1} alt='slide 1'></img>
+          </div>
+        </div>
+         {/* <CCarousel >
             <CCarouselItem className='carousleItem'>
                 <div className='innerSec'>
                    <div className='left'>
@@ -44,12 +48,12 @@ export default function Header() {
                     </div>
                   </div>
                  <div className='right'>
-                   <img src={Banner3} alt='slide 1'></img>
+                   <img src={Banner1} alt='slide 1'></img>
                  </div>
                </div>
-         </CCarouselItem>
+         </CCarouselItem> */}
         
-        <CCarouselItem  className='carousleItem' onClick={()=>handleSearch("High Protien")}>
+        {/* <CCarouselItem  className='carousleItem' onClick={()=>handleSearch("High Protien")}>
              <div className='headerImage'>
                  
                 <Link to='/store'>
@@ -67,11 +71,10 @@ export default function Header() {
                   <img className="d-block w-100" src={Banner2} alt="slide 2" />
                 </Link>
              </div>
-        </CCarouselItem>
+        </CCarouselItem> */}
 
 
-   </CCarousel>
-        </div>
+   {/* </CCarousel> */}
 
     </>
   )

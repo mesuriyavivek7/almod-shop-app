@@ -126,6 +126,24 @@ export default function About() {
           transition={transition}
           >Now the company is on its way to repeat the success story, taking forward the dream of HAR JAGAH FUELFLEX.</motion.p>
         </motion.div>
+
+        <motion.div
+        initial='hidden'
+        whileInView='show'
+        variants={fadeInUp}
+        transition={transition}
+        >
+         <motion.h2 
+          variants={fadeInUp}
+          transition={transition}
+          className='aboutselfhead'>" Each tree we plant is a step towards a cleaner,greener planet."</motion.h2>
+          <motion.p
+          variants={fadeInUp}
+          transition={transition}
+          >Our aim is to make our planet clean and green.For that we have taken out first step towards making the environment clean by planting 501 mango trees.Which will provide oxygen to our environment.Which is also baneficial for people's health....</motion.p>
+
+        </motion.div>
+
       </div>
       {/* <div className='aboutFooter'>
          <span className='aboutFooterText'>fuelflex was inception mit bhuva. bringing their entrepreneur mind, dedicates  and thet have added the human element. Before starting the business, he met his friend Prayag Katharotiya and he joined the business.</span>
