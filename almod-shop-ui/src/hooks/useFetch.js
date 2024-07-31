@@ -13,6 +13,7 @@ const useFetch=(url)=>{
 
           try{
           const res=await axios.get(`${process.env.REACT_APP_API_BASE_URL}${url}`,{withCredentials:true})
+          console.log(`${process.env.REACT_APP_API_BASE_URL}${url}`)
           setData(res.data)
           }catch(err){
              setError(true)
