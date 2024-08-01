@@ -13,7 +13,7 @@
 }
 .oline{
     height: .2rem;
-    background-color:#E48F45;
+    background-color:#C38154;
     width: 8%;
     border-radius:.5rem;
     border: none;
@@ -49,7 +49,7 @@
 }
 .ordersubmit{
    padding: 1rem;
-   background-color: #0047ab;
+   background-color: #5c3939;
    color: white;
    font-weight: bold;
    font-size: 1.1rem;

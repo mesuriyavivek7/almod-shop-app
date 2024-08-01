@@ -34,8 +34,8 @@ export default function Footer() {
                 <span className='quickTitle' >Quick Links</span>
                 <div className='quickLinks'>
                     <Link style={{textDecoration:'none'}} to='/'><a className='quickItem' href="##">Home</a></Link>
-                    <Link style={{textDecoration:'none'}} to='/store'><a className='quickItem' href="##">Our Store</a></Link>
-                    <Link style={{textDecoration:'none'}} to='/about'><a className='quickItem' href="##">About Us</a></Link>
+                    <Link style={{textDecoration:'none'}} to='/store'><a className='quickItem' href="##">Products</a></Link>
+                    <Link style={{textDecoration:'none'}} to='/about'><a className='quickItem' href="##">Our Story</a></Link>
                     <Link style={{textDecoration:'none'}} to='/contact'><a className='quickItem' href="##">Contact Us</a></Link>
                 </div>
             </div>

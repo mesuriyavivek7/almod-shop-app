@@ -3,39 +3,38 @@ import React from 'react'
 //importing css
 import './header.css'
 
-import { Navigate, useNavigate } from 'react-router-dom'
 
 //importing core ui
-import { CCarousel } from '@coreui/react'
-import { CCarouselItem } from '@coreui/react'
+// import { CCarousel } from '@coreui/react'
+// import { CCarouselItem } from '@coreui/react'
+
 import { Link } from 'react-router-dom'
 
 //importing core ui css
-import '@coreui/coreui/dist/css/coreui.min.css'
+// import '@coreui/coreui/dist/css/coreui.min.css'
 
 //importing image
-import Banner3 from '../../assets/banner3.jpg'
-import Banner2 from '../../assets/banner2.png'
+// import Banner3 from '../../assets/banner3.jpg'
+// import Banner2 from '../../assets/banner2.png'
 import Banner1 from '../../assets/bannerOne.png'
-import Banner4 from '../../assets/banner4.jpg'
+// import Banner4 from '../../assets/banner4.jpg'
 
 //importing navbar
 import Navbar from '../navbar/Navbar'
 
 
 export default function Header() {
-  const navigate=useNavigate()
-  const handleSearch=(keyword)=>{
-     navigate('/store',{state:keyword})    
-  }
+  
+
   return (
     <>
       <Navbar></Navbar>
         <div className='topheader'>
-          <div class="header-img-container">
-                <Link to='/store' style={{textDecoration:'none'}}><button class="explore-btn">Explore Store</button></Link>
-              <img class="header-img" src={Banner1} alt='slide 1'></img>
-          </div>
+          <Link to='/store'>
+           <div class="headerImageContainer">
+                <img class="headerImg" src={Banner1} alt='slide 1'></img>
+           </div>
+          </Link>
         </div>
          {/* <CCarousel >
             <CCarouselItem className='carousleItem'>

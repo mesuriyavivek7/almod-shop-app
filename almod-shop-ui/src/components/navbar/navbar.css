@@ -23,7 +23,7 @@
    top: -10%;
 }
 .logo{
-    height: 75px;
+    height: 65px;
     width:200px;
     padding:.3rem;
 }
@@ -56,10 +56,10 @@
    
 }
 .menuItem:hover{
-    color:#FDB515;
+    color:#C38154;
 }
 .menuItem.bo-item:hover{
-    color:#FDB515;
+    color:#C38154;
 }
 .navIcon{
     display: flex;
@@ -77,7 +77,7 @@
     font-weight: bold;
 }
 .navBtn:hover{
-    background-color:#FDB515;
+    background-color:#C38154;
 }
 .searchIcon{
     font-weight:300;
@@ -87,7 +87,7 @@
     transition: .2s linear;
 }
 .searchIcon:hover{
-    color:#FDB515;
+    color:#C38154;
 }
 .shoppingCart{
     position: relative;
@@ -101,11 +101,11 @@
     transition: .2s linear;
 }
 .navCart:hover{
-    color: #FDB515;
+    color: #C38154;
 }
 .cartItem{
     position: absolute;
-    background-color:#FDB515;
+    background-color:#C38154;
     color:white;
     font-size: .8rem;
     right: -5px;
@@ -174,12 +174,12 @@
     transition: .2s linear;
 }
 .useraccount:hover{
-    color: #FDB515;
+    color: #C38154;
 }
 
 .viewAllBtn{
-    color: #FDB515;
-    border: .1rem solid #FDB515;
+    color: #C38154;
+    border: .1rem solid #C38154;
     padding: .8rem 1.5rem;
     font-weight: bold;
     background-color: transparent;
@@ -187,7 +187,7 @@
 }
 .viewAllBtn:hover{
     color: white;
-    background-color: #FFD700;
+    background-color: #C38154;
 }
 
 

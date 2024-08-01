@@ -20,6 +20,7 @@
     color: #28282B;
     font-size: 1.8rem;
     letter-spacing: 1.2px;
+    gap:.5rem;
 }
 
 .registerContent{
@@ -31,7 +32,7 @@
 
 .registerBtn{
     border: none;
-    background-color:#FDB515;
+    background-color:#C38154;
     padding:.6rem .4rem;
     width: 100%;
     color: white;
