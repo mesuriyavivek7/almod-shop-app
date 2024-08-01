@@ -210,13 +210,13 @@
        transition: .2s linear;
     }
     .open{
-        right: 0%;
+        right: -10%;
     }
     .menuItem{
         color: black;
     }
     .navBtn{
-        background-color: #0047ab;
+        background-color: #5c3939;
         color: white;
     }
     .logo{
@@ -237,15 +237,15 @@
         padding: .6rem 1.4rem;
     }
     .useraccount{
-        color: #FDB515;
+        color: #C38154;
     }
     .menuItem.bo-item{
-        color: #FDB515;
-        border: .1rem solid  #FDB515;
+        color: #C38154;
+        border: .1rem solid  #C38154;
     }
     .menuItem.bo-item:hover{
         color: white;
-        background-color: #FDB515;
+        background-color: #C38154;
     }
     
 }
