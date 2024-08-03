@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom'
 //importing image
 // import Banner3 from '../../assets/banner3.jpg'
 // import Banner2 from '../../assets/banner2.png'
-import Banner1 from '../../assets/bannerOne.png'
+import Banner1 from '../../assets/headbanner.jpg'
 // import Banner4 from '../../assets/banner4.jpg'
 
 //importing navbar

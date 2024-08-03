@@ -131,8 +131,8 @@ export default function Navbar() {
           }
 
           <Link className='menuItem' to='/'>HOME</Link>
-          <Link to='/store' className='menuItem'>Products</Link>
-          <Link to='/about' className='menuItem'>Our Story</Link>
+          <Link to='/store' className='menuItem'>PRODUCTS</Link>
+          <Link to='/about' className='menuItem'>OUR STORY</Link>
           <Link to='/contact' className='menuItem'>CONTACT US</Link>
           <Link to='/bulkorder' className='menuItem bo-item'>BULK ORDER</Link>
 

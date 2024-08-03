@@ -45,7 +45,7 @@
 }
 .categoryItem img{
    position: relative;
-   object-fit: cover;
+   
    scale: 1;
    height: 290px;
    width: 600px;
