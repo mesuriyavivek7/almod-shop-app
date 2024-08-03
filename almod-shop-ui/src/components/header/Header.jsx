@@ -14,10 +14,7 @@ import { Link } from 'react-router-dom'
 // import '@coreui/coreui/dist/css/coreui.min.css'
 
 //importing image
-// import Banner3 from '../../assets/banner3.jpg'
-// import Banner2 from '../../assets/banner2.png'
-import Banner1 from '../../assets/headbanner.jpg'
-// import Banner4 from '../../assets/banner4.jpg'
+import HeaderImage from '../../assets/headerbanner.jpg'
 
 //importing navbar
 import Navbar from '../navbar/Navbar'
@@ -32,7 +29,7 @@ export default function Header() {
         <div className='topheader'>
           <Link to='/store'>
            <div class="headerImageContainer">
-                <img class="headerImg" src={Banner1} alt='slide 1'></img>
+                <img class="headerImg" src={HeaderImage} alt='slide 1'></img>
            </div>
           </Link>
         </div>

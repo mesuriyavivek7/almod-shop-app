@@ -22,6 +22,7 @@
 .headerImageContainer .headerImg{
   width: 100%;
   height: 100%;
+  object-fit: fill;
 }
 
 .innerSec{
@@ -240,4 +241,13 @@
   border-radius: 10x;
   font-family: sans-serif;
 }
+
+@media screen and (max-width:390px){
+
+  .headerImageContainer{
+    height:32vh;
+  }
+
+}
 /*css ended*/
+
