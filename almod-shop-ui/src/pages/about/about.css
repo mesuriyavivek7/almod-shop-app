@@ -67,7 +67,7 @@
     color:#FDB515;
     font-size: 2rem;
     color: #28282B;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "sans-serif";
 }
 .aboutText{
     display: flex;
@@ -80,7 +80,7 @@
     font-weight: 500;
     display: flex;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "sans-serif";
 }
 /* .aboutFooter{
     background-color:#F5CCA0;
@@ -106,16 +106,17 @@
     text-align: center;
 }
 .moreaboutsec .aboutselfhead{
-    font-size: 2.2rem;
-    font-family: "Oswald", sans-serif;
-    color: #36454F;
+    font-size: 22px;
+    font-family: "sans-serif";
+    color: #030a0c;
     text-transform: uppercase;
     margin-bottom:1rem;
+    font-weight: bold;
 }
 .moreaboutsec p{
     font-size: 1.1rem;
     color: #28282B;
-    font-family: "Montserrat", sans-serif;
+    font-family: "sans-serif";
     color:#28282B;
     font-weight: 500;
     line-height: 1.6;
@@ -138,7 +139,7 @@
         padding:1rem;
     }
     .aboutHead{
-        font-size:1.5rem;
+        font-size:22px;
         text-align:left;
         padding-left: 1rem;
     }
@@ -147,7 +148,7 @@
         padding:.5rem .8rem;
     }
     .moreaboutsec .aboutselfhead{
-        font-size:2.2rem;
+        font-size:22px;
     }
     .moreaboutsec p{
         font-size: 1.1rem;
@@ -155,4 +156,14 @@
     }
 
 
+}
+.about-text-strong{
+    display: contents !important;
+}
+.aboutHead{
+    opacity: 1;
+    transform: none;
+    font-size: 22px;
+    font-family: "sans-serif";
+    font-weight: bold;
 }
