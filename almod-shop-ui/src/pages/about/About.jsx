@@ -13,6 +13,7 @@ import {motion} from 'framer-motion'
 
 //importing images
 import Person from '../../assets/mitbhuva.png'
+import Tree from '../../assets/tree_image.png'
 
 
 export default function About() {
@@ -78,6 +79,49 @@ export default function About() {
                 variants={fadeInUp}
                 transition={transition}
                 className='personImg'
+            alt='' src={Tree}></motion.img>
+            <motion.div 
+            initial='hidden'
+                whileInView='show'
+                variants={fadeInUp}
+                transition={transition}
+            className='persontitle'>
+                <span>The Trees</span>
+            </motion.div>
+        </div>
+      </div>
+
+
+      <div className='aboutContainer'>
+         <motion.div
+                initial='hidden'
+                whileInView='show'
+                variants={fadeInUp}
+                transition={transition}
+          className='aboutContent'>
+            <div className='aboutBox'>
+                <motion.h2
+                variants={fadeInUp}
+                transition={transition}
+                className='aboutHead'><strong>Chase your vision, not the competition</strong></motion.h2>
+                <div className='aboutText'>
+                    <motion.span
+                    variants={fadeInUp}
+                    transition={transition}
+                    >FIRST UNIFIED was incepted by <strong class="about-text-strong">Mit Bhuva</strong>. 
+                    Bringing their entrepreneurial skills, commitment and astuteness to the fore they have been guiding their team, To their team, working day in and out to realise a dream. To their repertoire of skills they have added the human element which has proved vritical in making a success of <strong class="about-text-strong">FIRST UNIFIED</strong>.
+                    </motion.span>
+                   
+                </div>
+            </div>            
+         </motion.div>
+        <div className='aboutImg'>
+           <motion.img
+                initial='hidden'
+                whileInView='show'
+                variants={fadeInUp}
+                transition={transition}
+                className='personImg'
             alt='' src={Person}></motion.img>
             <motion.div 
             initial='hidden'
@@ -91,22 +135,6 @@ export default function About() {
       </div>
 
       <div className='moreaboutsec'>
-        <motion.div
-               initial='hidden'
-                whileInView='show'
-                variants={fadeInUp}
-                transition={transition}
-        >
-          <motion.h2 
-          variants={fadeInUp}
-          transition={transition}
-          className='aboutselfhead'>" Chase your vision, not the competition "</motion.h2>
-          <motion.p
-          variants={fadeInUp}
-          transition={transition}
-          >FIRST UNIFIED was incepted by <b>Mit Bhuva</b>. Bringing their entrepreneurial skills, commitment and astuteness to the fore they have been guiding their team, To their team, working day in and out to realise a dream. To their repertoire of skills they have added the human element which has proved vritical in making a success of <b>FIRST UNIFIED</b>.</motion.p>
-        </motion.div>
-
         <motion.div
         initial='hidden'
         whileInView='show'
