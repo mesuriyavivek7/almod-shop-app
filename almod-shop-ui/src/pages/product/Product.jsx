@@ -188,7 +188,7 @@ export default function Product() {
                 </div>
                 <div className='productSizeInfo'>
                   <span className={(data.size==="350gm")?("productSizeText active"):("productSizeText")}>350gm</span>
-                  <span className={(data.size==="850gm")?("productSizeText active"):("productSizeText")}>850kg</span>
+                  <span className={(data.size==="850gm")?("productSizeText active"):("productSizeText")}>850gm</span>
                   <span className={(data.size==="1250gm")?("productSizeText active"):("productSizeText")}>1250gm</span>
                 </div>
              </div>
