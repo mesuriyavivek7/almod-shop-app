@@ -35,10 +35,14 @@
 
 .categorySec{
     cursor: pointer;
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(2,minmax(380px,1fr));
     gap: 3rem;
     align-items: center;
+    justify-content: center;
+    
 }
+
 .categoryItem{
     border-radius: .5rem;
     overflow: hidden;
@@ -87,7 +91,7 @@
   
   .categorySec{
     padding:0rem 1rem;
-    flex-direction: column;
+    grid-template-columns:repeat(1,minmax(280px,1fr));
     gap: 1.5rem;
     align-items: flex-start;
   }
