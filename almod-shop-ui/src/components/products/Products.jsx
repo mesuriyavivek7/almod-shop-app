@@ -152,7 +152,7 @@ export default function Products() {
                     </Link>
                     <div className='productContent'>
                         <span className='productText'>{productTitle}</span>
-                        <span className='productPrice'>Rs. {sellingPrice}.00/<small>{product.size}</small> {isDiscountAvailable && <span className='orgPrice'>Rs. {orgPrice}.00/Kg</span>}</span>
+                        <span className='productPrice'>Rs. {sellingPrice}.00/<small>{product.size}</small> {isDiscountAvailable && <span className='orgPrice'>Rs. {orgPrice}.00/{product.size}</span>}</span>
                         <div className='productSize'><i>Pack of </i>{product.size}</div>
                         <button className='productBtn' onClick={()=>handleCart(product._id,sellingPrice,savingMoney,product.size)}>Add to cart</button>
                     </div>

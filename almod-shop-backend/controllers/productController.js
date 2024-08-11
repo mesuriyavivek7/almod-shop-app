@@ -52,7 +52,8 @@ export const getProducts=async (req,res,next)=>{
     }
 
     try{
-      let getproducts=await Product.find({...others,$or:[{size:size || '350gm'},{size:size || '850gm'},{size:size || '1250gm'}],price:{$gte:min || 1,$lte:max || 10000}}).limit(limit)
+      let getproducts=await Product.find({...others,$or:[{size:size || '60gm'},{size:size || '350gm'},{size:size || '850gm'},{size:size || '1250gm'}],price:{$gte:min || 1,$lte:max || 10000}}).limit(limit)
+      
       if(keyword!==undefined){
          getproducts=searchProduct(keyword,getproducts)
       }

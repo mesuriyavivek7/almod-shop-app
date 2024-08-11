@@ -206,6 +206,7 @@ export default function Store() {
                    <span>QNT:</span>
                    <select className='sizeSelect' onChange={(e)=>setQnt(e.target.value)}>
                      <option value='none'>none</option>
+                     <option value="60gm">60gm</option>
                      <option value="350gm">350gm</option>
                      <option value="850gm">850gm</option>
                      <option value="1250gm">1250gm</option>
@@ -261,7 +262,7 @@ export default function Store() {
                     </Link>
                     <div className='productContent'>
                         <span className='productText'>{productTitle}</span>
-                        <span className='productPrice'>Rs. {sellingPrice}.00/<small>{product.size}</small> {isDiscountAvailable && <span className='orgPrice'>Rs. {orgPrice}/Kg</span>}</span>
+                        <span className='productPrice'>Rs. {sellingPrice}.00/<small>{product.size}</small> {isDiscountAvailable && <span className='orgPrice'>Rs. {orgPrice}/{product.size}</span>}</span>
                         <div className='productSize'><i>pack of </i>{product.size}</div>
                         <button className='productBtn' onClick={()=>handleCart(product._id,sellingPrice,savingMoney,product.size)}>Add to cart</button>
                     </div>
