@@ -53,7 +53,7 @@ export default function Testimonial() {
                <div className='testImage'>
                 <img src={TestD} className='testiImg' alt=''></img>
                </div>
-               <span className='personName'>Rinal Bhuva</span>
+               <span className='personName'>Rinal Ankoliya</span>
              </div>
              <div className='testiContent'>
               <p className='testitext'>" Fuelflex Peanut Butter has become a staple in my pantry. It's a perfect blend of taste, nutrition, and convenience. "</p>
