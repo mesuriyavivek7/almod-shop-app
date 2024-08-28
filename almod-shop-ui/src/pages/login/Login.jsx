@@ -158,7 +158,7 @@ export default function Login() {
   return (
     <div>
       <Navbar></Navbar>
-         <div className='loginSec'>
+         <div className='login_sec'>
           
             <div className='login'>
              <span className='successmsg'>{location.state}</span>
