@@ -5,7 +5,7 @@
     transition: .4s linear;
 }
 .navbar{
-    position: fixed;
+    /* position: fixed; */
     right: 0;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@
     background: linear-gradient(150deg, #5c3939 20%, #5c3939 70%, #5c3939 100%);
     z-index: 9999;
     transition: .2s linear;
-    border-bottom: .1rem solid white;
+    /* border-bottom: .1rem solid white; */
 }
 .navbar-hide{
    top: -10%;

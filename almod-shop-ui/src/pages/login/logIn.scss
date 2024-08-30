@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.login_sec {
+  background-image: url("../../assets/lbg1.png");
+  .login_image {
+    // background-color: #5c3939;
+    .log_img{
+      height: 720px;
+    }
+  }
+  .login_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login {
+      border: 1px solid #5c393947;
+      width: 65%;
+      padding: 30px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background-color: #fff;
+      .login_title {
+        font-family: "Varela Round", sans-serif;
+        color: #5c3939;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(92, 57, 57, 0.2784313725);
+        margin-bottom: 30px;
+      }
+      .input_content_wrap {
+        .login_paragraph {
+          font-family: "Varela Round", sans-serif;
+          font-size: 13px;
+          color: #5c3939c7;
+          text-align: center;
+        }
+        .input_main {
+          label {
+            font-family: "Varela Round", sans-serif;
+            font-size: 13px;
+            color: #5c3939;
+          }
+          .input_wrap {
+            position: relative;
+            border: 2px solid #5c3939;
+            border-radius: 5px;
+            height: 50px;
+            margin-bottom: 30px;
+            .input_img {
+              position: absolute;
+              height: 20px;
+              top: 16px;
+              left: 16px;
+            }
+            .divider {
+              position: absolute;
+              height: 40px;
+              width: 2px;
+              background: #5c3939;
+              top: 6px;
+              left: 53px;
+            }
+            .input {
+              border: none;
+              height: 50px;
+              padding-left: 70px;
+              border-radius: 5px;
+              font-family: "Varela Round", sans-serif;
+
+              &::placeholder {
+                color: #5c39398e;
+                font-family: "Varela Round", sans-serif;
+              }
+            }
+          }
+        }
+      }
+      .login_btn {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        background: #5c3939;
+        color: #f0bf93;
+        font-family: "Varela Round", sans-serif;
+        border: 2px solid #5c3939;
+        &:hover {
+          background-color: transparent;
+          color: #5c3939;
+        }
+      }
+      .new_user {
+        font-size: 12px;
+        text-align: end;
+        color: #5c3939;
+        margin-top: 20px;
+        span {
+          font-family: "Varela Round", sans-serif;
+        }
+        a {
+          font-family: "Varela Round", sans-serif;
+        }
+      }
+    }
+  }
+}
