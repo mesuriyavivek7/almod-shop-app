@@ -1,0 +1,28 @@
+.container {
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.dataDisplay {
+    padding: 0.5rem;
+    margin: 0.5rem 0.25rem;
+    font-size: 1.2rem;
+    color: #5c3939;
+    border: 1px solid #fac540;
+    border-radius: 5px;
+}
+
+.deleteBtn {
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+    font-size: 1.2rem;
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.deleteBtn:hover {
+    color: white;
+    background-color: red;
+}
