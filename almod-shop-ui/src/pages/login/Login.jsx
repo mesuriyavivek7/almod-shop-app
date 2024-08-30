@@ -173,7 +173,7 @@ export default function Login() {
           xs={24}
           sm={24}
           md={24}
-          lg={12}
+          lg={14}
           xl={12}
           xxl={12}
           className="login_content"
@@ -242,7 +242,7 @@ export default function Login() {
           xs={24}
           sm={24}
           md={24}
-          lg={12}
+          lg={10}
           xl={12}
           xxl={12}
           className="login_image"
