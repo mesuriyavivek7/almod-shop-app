@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react'
+import { useRecoilValue } from 'recoil';
+import { adminAtom } from '../../context/AdminAtom';
 
 //importing css
 import './navbar.css'
 
 import { useEffect } from 'react';
 
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { Link } from 'react-router-dom'
 //importign auto animate 
@@ -30,203 +32,208 @@ import { CartContext } from '../../context/CartContext';
 import useFetch from '../../hooks/useFetch';
 
 export default function Navbar() {
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
-  const transition={
-    duration:.3,
+  const transition = {
+    duration: .3,
   }
 
   //for searching products
 
-  const [keyword,setKeyword]=useState('')
-  const {data,loading,refetch}=useFetch(`/product/searchby?keyword=${keyword}&limit=3`)
-  useEffect(()=>{
+  const [keyword, setKeyword] = useState('')
+  const { data, loading, refetch } = useFetch(`/product/searchby?keyword=${keyword}&limit=3`)
+  useEffect(() => {
     refetch()
-  },[keyword])
+  }, [keyword])
 
 
-  const handleSearch=()=>{
-      navigate("/store",{state:keyword})
+  const handleSearch = () => {
+    navigate("/store", { state: keyword })
   }
-  
-  const [navShow,setNavShow]=useState(true)
-  const [maxScroll,setMaxScroll]=useState(0)
 
-  const {user} = useContext(AuthContext)
-  const handleScroll=()=>{
-    const scrollposition=window.scrollY
+  const [navShow, setNavShow] = useState(true)
+  const [maxScroll, setMaxScroll] = useState(0)
+
+  const { user } = useContext(AuthContext)
+  const handleScroll = () => {
+    const scrollposition = window.scrollY
     // setScroll(scrollposition)
-    if(scrollposition>maxScroll){
+    if (scrollposition > maxScroll) {
       setNavShow(false)
-    }else{
+    } else {
       setNavShow(true)
     }
     setMaxScroll(scrollposition)
 
-   }
-   
-   //code for cart
-   const {cart}=useContext(CartContext)
+  }
 
-   //check user funtion
+  //code for cart
+  const { cart } = useContext(CartContext)
 
-   const checkUser=(mobilecheck)=>{
-      if(mobile===mobilecheck){
-         if(user===null){
-           return (
-            <Link to='/login'><button className='navBtn'>Login / Register</button></Link>
-           )
-         }else{
-           return (
-            <Link to='/profile'><AccountCircleIcon className='useraccount'></AccountCircleIcon></Link>
-           )
-         }
+  //check user funtion
+
+  const checkUser = (mobilecheck) => {
+    if (mobile === mobilecheck) {
+      if (user === null) {
+        return (
+          <Link to='/login'><button className='navBtn'>Login / Register</button></Link>
+        )
+      } else {
+        return (
+          <Link to='/profile'><AccountCircleIcon className='useraccount'></AccountCircleIcon></Link>
+        )
       }
-   }
-  
+    }
+  }
 
-  useEffect(()=>{
-    
-      window.addEventListener("scroll",handleScroll)
-      return ()=>{
-        window.removeEventListener("scroll",handleScroll)
-      }
-    
+
+  useEffect(() => {
+
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+
   })
 
   //code for responsive navbar
-  let mobileview=(window.innerWidth<=768)?true:false
-  const [mobile,setMobile]=useState(mobileview)
-  const [menuOpen,setMenuOpen]=useState(false)
+  let mobileview = (window.innerWidth <= 768) ? true : false
+  const [mobile, setMobile] = useState(mobileview)
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  const handleMobile=()=>{
-     if(window.innerWidth<=768){
-       setMobile(true)
-     }else{
-       setMobile(false)
-     }
+  const handleMobile = () => {
+    if (window.innerWidth <= 768) {
+      setMobile(true)
+    } else {
+      setMobile(false)
+    }
   }
 
-  useEffect(()=>{
-    window.addEventListener("resize",handleMobile)
-    return ()=>{
-      window.removeEventListener("resize",handleMobile)
+  useEffect(() => {
+    window.addEventListener("resize", handleMobile)
+    return () => {
+      window.removeEventListener("resize", handleMobile)
     }
-  },[])
+  }, [])
+
+
 
   //for search icon open and close
 
-  const [searchOpen,setSearchOpen]=useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
+  const adminValue = useRecoilValue(adminAtom);
 
   return (
-    <div className={navShow===false?'navbar navbar-hide':'navbar'}>
-       <div className='logo' >
-        <Link to='/' style={{textDecoration:'none'}}><img alt='' src={LOGO} className='navhead'></img></Link>
-       </div>
+    <div className={navShow === false ? 'navbar navbar-hide' : 'navbar'}>
+      <div className='logo' >
+        <Link to='/' style={{ textDecoration: 'none' }}><img alt='' src={LOGO} className='navhead'></img></Link>
+      </div>
 
-       <div className={(mobile===true && menuOpen===true)?"menubar open":"menubar"}>
+      <div className={(mobile === true && menuOpen === true) ? "menubar open" : "menubar"}>
 
-          {
-             checkUser(true)
-          }
+        {
+          checkUser(true)
+        }
 
-          <Link className='menuItem' to='/'>HOME</Link>
-          <Link to='/store' className='menuItem'>PRODUCTS</Link>
-          <Link to='/about' className='menuItem'>OUR STORY</Link>
-          <Link to='/contact' className='menuItem'>CONTACT US</Link>
-          <Link to='/bulkorder' className='menuItem bo-item'>BULK ORDER</Link>
+        <Link className='menuItem' to='/'>HOME</Link>
+        <Link to='/store' className='menuItem'>PRODUCTS</Link>
+        <Link to='/about' className='menuItem'>OUR STORY</Link>
+        <Link to="/career" className='menuItem'>CAREER</Link>
+        <Link to='/contact' className='menuItem'>CONTACT US</Link>
+        <Link to='/bulkorder' className='menuItem bo-item'>BULK ORDER</Link>
+        {adminValue && <Link to='/adminHome' className='menuItem'>DASHBOARD</Link>}
 
-       </div>
-       <div className='navIcon'>
-          
-          {
-            checkUser(false)
-          }
-          
+      </div>
+      <div className='navIcon'>
 
-          <SearchIcon onClick={()=>setSearchOpen(!searchOpen)} className='searchIcon'></SearchIcon>
-          <Link to='/cart'>
-            <div className='shoppingCart'>
-               <LocalMallIcon className='navCart'></LocalMallIcon>
-               
-               {
-                (cart!==null && cart.length!==0) && <span className='cartItem'>{cart.length}</span>
-               }
-            </div>
-          </Link>
+        {
+          checkUser(false)
+        }
 
-         
-          {
-            mobile && (
-            (menuOpen===true)?(<CloseIcon onClick={()=>setMenuOpen(!menuOpen)} className='closeIcon'></CloseIcon>):(<MenuIcon onClick={()=>setMenuOpen(!menuOpen)} className='menuIcon'></MenuIcon>) )
-            
-          }
-          
-          
-       </div>
-       {
+
+        <SearchIcon onClick={() => setSearchOpen(!searchOpen)} className='searchIcon'></SearchIcon>
+        <Link to='/cart'>
+          <div className='shoppingCart'>
+            <LocalMallIcon className='navCart'></LocalMallIcon>
+
+            {
+              (cart !== null && cart.length !== 0) && <span className='cartItem'>{cart.length}</span>
+            }
+          </div>
+        </Link>
+
+
+        {
+          mobile && (
+            (menuOpen === true) ? (<CloseIcon onClick={() => setMenuOpen(!menuOpen)} className='closeIcon'></CloseIcon>) : (<MenuIcon onClick={() => setMenuOpen(!menuOpen)} className='menuIcon'></MenuIcon>))
+
+        }
+
+
+      </div>
+      {
 
         searchOpen &&
         <motion.div
-        transition={transition}
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        className='searchSec'>
-          <CloseIcon style={{color:"gray"}} onClick={()=>setSearchOpen(!searchOpen)} className='SearchCloseIcon'></CloseIcon>
+          transition={transition}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className='searchSec'>
+          <CloseIcon style={{ color: "gray" }} onClick={() => setSearchOpen(!searchOpen)} className='SearchCloseIcon'></CloseIcon>
           <h1 className='searchTitle'>
-             Search
+            Search
           </h1>
-         <div className='inputBox'>
-           <SearchIcon style={{color:"gray",paddingLeft:".3rem"}} ></SearchIcon>
-           <input onChange={(e)=>setKeyword(e.target.value)} className='searchInput' type='text' placeholder='What are you looking for?'></input>
-         </div>
- 
-       
-         {
-          (loading)?(<div className='loadscreen'>
-             
-          </div>):((data.length===0)?((keyword==='')?(<span></span>):(<span>No Products available</span>)):(
-            <>
-             <div className='searchResult'>
-               {
-                data.map((product,i)=>{
-                   let isDiscountAvailable=false
-                   let orgPrice=product.price;
-                   let sellingPrice;
-                   let savingMoney=0;
-                   if(product.discount!==0){
-                     isDiscountAvailable=true
-                     savingMoney=Math.floor((product.discount*orgPrice)/100)
-                     sellingPrice=orgPrice-savingMoney
-                   }else{
-                     sellingPrice=orgPrice
-                   }
-                   return(
-                    <Link to={`product/${product._id}`} style={{textDecoration:'none'}}>
-                        <SearchResult key={i} productImg={product.images[0]} productTitle={product.title} sellingPrice={sellingPrice} orgPrice={isDiscountAvailable?(orgPrice):(undefined)}></SearchResult>
-                    </Link>
-                   )
-                   
+          <div className='inputBox'>
+            <SearchIcon style={{ color: "gray", paddingLeft: ".3rem" }} ></SearchIcon>
+            <input onChange={(e) => setKeyword(e.target.value)} className='searchInput' type='text' placeholder='What are you looking for?'></input>
+          </div>
 
-                  
-                })
-               }
-               
-               
-             </div>
-             <div className='searchBtnSec'>
-                <button className='viewAllBtn' onClick={()=>handleSearch()}>View All</button>
-             </div>
-            </>
 
-          )
-          )
-         }
+          {
+            (loading) ? (<div className='loadscreen'>
 
-       </motion.div>
+            </div>) : ((data.length === 0) ? ((keyword === '') ? (<span></span>) : (<span>No Products available</span>)) : (
+              <>
+                <div className='searchResult'>
+                  {
+                    data.map((product, i) => {
+                      let isDiscountAvailable = false
+                      let orgPrice = product.price;
+                      let sellingPrice;
+                      let savingMoney = 0;
+                      if (product.discount !== 0) {
+                        isDiscountAvailable = true
+                        savingMoney = Math.floor((product.discount * orgPrice) / 100)
+                        sellingPrice = orgPrice - savingMoney
+                      } else {
+                        sellingPrice = orgPrice
+                      }
+                      return (
+                        <Link to={`product/${product._id}`} style={{ textDecoration: 'none' }}>
+                          <SearchResult key={i} productImg={product.images[0]} productTitle={product.title} sellingPrice={sellingPrice} orgPrice={isDiscountAvailable ? (orgPrice) : (undefined)}></SearchResult>
+                        </Link>
+                      )
 
-       }
-       
+
+
+                    })
+                  }
+
+
+                </div>
+                <div className='searchBtnSec'>
+                  <button className='viewAllBtn' onClick={() => handleSearch()}>View All</button>
+                </div>
+              </>
+
+            )
+            )
+          }
+
+        </motion.div>
+
+      }
+
     </div>
   )
 }

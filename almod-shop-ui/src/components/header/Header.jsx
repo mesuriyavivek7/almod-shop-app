@@ -28,8 +28,8 @@ export default function Header() {
       <Navbar></Navbar>
         <div className='topheader'>
           <Link to='/store'>
-           <div class="headerImageContainer">
-                <img class="headerImg" src={HeaderImage} alt='slide 1'></img>
+           <div className="headerImageContainer">
+                <img className="headerImg" src={HeaderImage} alt='slide 1'></img>
            </div>
           </Link>
         </div>

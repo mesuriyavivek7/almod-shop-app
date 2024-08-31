@@ -37,6 +37,7 @@ export default function Footer() {
                     <Link style={{textDecoration:'none'}} to='/store'><a className='quickItem' href="##">Products</a></Link>
                     <Link style={{textDecoration:'none'}} to='/about'><a className='quickItem' href="##">Our Story</a></Link>
                     <Link style={{textDecoration:'none'}} to='/contact'><a className='quickItem' href="##">Contact Us</a></Link>
+                    <Link style={{textDecoration:'none'}} to='/career' className='quickItem'>Career</Link>
                 </div>
             </div>
 

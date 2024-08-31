@@ -69,6 +69,8 @@
 .navBtn{
     border: none;
     background-color:white;
+    border-radius: 5px;
+    font-family: sans-serif;
     color: #002D62;
     padding:.5rem 1rem;
     cursor: pointer;
@@ -78,6 +80,7 @@
 }
 .navBtn:hover{
     background-color:#C38154;
+    color: white;
 }
 .searchIcon{
     font-weight:300;

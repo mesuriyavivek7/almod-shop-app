@@ -4,19 +4,22 @@ import App from './App';
 import { AuthContextProvider } from './context/AuthContext';
 import { CartContextProvider } from './context/CartContext';
 import { TransContextProvider } from './context/TransContext';
+import { RecoilRoot } from 'recoil';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
+
   <React.StrictMode>
-   <AuthContextProvider>
+    <AuthContextProvider>
       <CartContextProvider>
         <TransContextProvider>
-         <App />
+          <RecoilRoot>
+            <App />
+          </RecoilRoot>
         </TransContextProvider>
       </CartContextProvider>
-   </AuthContextProvider>
-  
+    </AuthContextProvider>
+
   </React.StrictMode>
 );
 
