@@ -1,0 +1,132 @@
+.container {
+    padding: 4.5rem 0rem;
+}
+
+.workSection {
+    background-color: #f0c092;
+    text-align: center;
+    padding: 7rem;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #5c3939;
+    text-decoration: underline;
+}
+
+.careerNote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+
+    p {
+        max-width: 45vw;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: sans-serif;
+    }
+}
+
+.applyTitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #5c3939;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applyTitleUnderline {
+    height: 2px;
+    width: 7rem;
+    margin-top: 5px;
+    background-color: #fac540;
+}
+
+.formContainer {
+    margin: 2rem 0;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 1rem;
+
+    @media screen and (max-width:500px) {
+        flex-direction: column;
+    }
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.inputFile {
+    width: 98.5%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.careerCardContainer {
+    background-color: #fac540;
+    padding: 5rem 0rem;
+}
+
+.submitButton {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #fff;
+    color: #5c3939;
+    border: 2px solid #5c3939;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #5c3939;
+    color: #fac540;
+    box-shadow: 0px 4px 3px gray;
+}
+
+
+.sansFont {
+    font-family: sans-serif;
+}

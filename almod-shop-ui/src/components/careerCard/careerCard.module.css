@@ -1,0 +1,26 @@
+.container {
+    padding: 1rem 4rem;
+}
+
+.titleContainer {
+    padding: 0rem 1rem;
+}
+
+.careerTitle {
+    font-size: 1.5rem;
+    color: #553131;
+    font-weight: 600;
+}
+
+.sansSerif {
+    font-family: sans-serif;
+}
+
+.contentContainer {
+    padding: 0rem 1rem;
+}
+
+.content {
+    font-family: sans-serif;
+    padding: 1rem 0rem;
+}
